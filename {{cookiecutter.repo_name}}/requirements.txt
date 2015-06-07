@@ -1,0 +1,3 @@
+# Deployment
+setuptools>=17.0
+twine>=1.5.0
