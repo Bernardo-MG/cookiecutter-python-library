@@ -82,8 +82,8 @@ The project has been released under the `MIT License`_.
 
 .. _Coveralls: https://coveralls.io
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
-.. _project issues page: https://github.com/weso/CWR-DataApi/issues
+.. _project issues page: https://github.com/Bernardo-MG/cookiecutter-python-library/issues
 .. _Sphinx: http://sphinx-doc.org/
 .. _latest docs: http://cwr-dataapi.readthedocs.org
-.. _GitHub project page: https://github.com/weso/CWR-DataApi
+.. _GitHub project page: https://github.com/Bernardo-MG/cookiecutter-python-library
 .. _MIT License: http://www.opensource.org/licenses/mit-license.php
