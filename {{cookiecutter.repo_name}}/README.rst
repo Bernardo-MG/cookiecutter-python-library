@@ -3,10 +3,14 @@
 ===============================
 
 .. image:: https://badge.fury.io/py/{{ cookiecutter.distribution_name }}.svg
-:target: https://pypi.python.org/pypi/{{ cookiecutter.distribution_name }}
+    :target: https://pypi.python.org/pypi/{{ cookiecutter.distribution_name }}
     :alt: {{ cookiecutter.project_name }} Pypi package page
 
-    Describe the project here.
+.. image:: https://readthedocs.org/projects/{{ cookiecutter.distribution_name }}/badge/?version=latest
+    :target: https://readthedocs.org/projects/{{ cookiecutter.distribution_name }}/?badge=latest
+    :alt: {{ cookiecutter.project_name }} documentation Status
+
+Describe the project here.
 
 Features
 --------
