@@ -11,15 +11,6 @@ include .coveragerc
 recursive-exclude tests *.pyc
 recursive-exclude tests *.pyo
 
-# Data files
-include data_cwr/*.py
-include data_cwr/*.csv
-include data_cwr/*.yml
-
-# Configuration files
-include config_cwr/*.yml
-include config_cwr/*.cml
-
 # Documentation
 recursive-include docs *
 recursive-exclude docs *.pyc
