@@ -33,7 +33,8 @@ def read(*names, **kwargs):
     ).read()
 
 # Gets the version for the source folder __init__.py file
-with open('{{ cookiecutter.package_name }}/__init__.py', 'rb', encoding='utf-8') as f:
+with open('{{ cookiecutter.package_name }}/__init__.py', 'rb',
+          encoding='utf-8') as f:
     version = f.read()
     version = _version_re.search(version).group(1)
     version = str(ast.literal_eval(version.rstrip()))
@@ -60,9 +61,10 @@ setup(
     package_data={
     },
     version=version,
-    description={{ '{0!r}'.format(cookiecutter.project_short_description).lstrip('ub') }},
-    author={{ '{0!r}'.format(cookiecutter.developer_name).lstrip('ub') }},
-    author_email={{ '{0!r}'.format(cookiecutter.developer_email).lstrip('ub') }},
+    description={
+    {'{0!r}'.format(cookiecutter.project_short_description).lstrip('ub')}},
+    author={{'{0!r}'.format(cookiecutter.developer_name).lstrip('ub')}},
+    author_email={{'{0!r}'.format(cookiecutter.developer_email).lstrip('ub')}},
     license='MIT',
     url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}',
     download_url='https://pypi.python.org/pypi/{{ cookiecutter.distribution_name }}',
@@ -70,6 +72,16 @@ setup(
     platforms='any',
     classifiers=[
         'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 2.6',
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.2',
+        'Programming Language :: Python :: 3.3',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: Implementation :: PyPy',
+        'Programming Language :: Python :: Implementation :: Jython',
     ],
     long_description=read('README.rst'),
     install_requires=[
