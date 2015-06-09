@@ -37,9 +37,9 @@ Contents
 Contents:
 
 .. toctree::
-:maxdepth: 2
+   :maxdepth: 2
 
-       usage
+   usage
 
-    * :ref:`genindex`
+* :ref:`genindex`
 * :ref:`search`
