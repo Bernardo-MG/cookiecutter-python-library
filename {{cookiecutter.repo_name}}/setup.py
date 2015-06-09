@@ -50,8 +50,7 @@ setup(
     package_data={
     },
     version={{ cookiecutter.package_name }}.__version__,
-    description={
-    {'{0!r}'.format(cookiecutter.project_short_description).lstrip('ub')}},
+    description={{'{0!r}'.format(cookiecutter.project_short_description).lstrip('ub')}},
     author={{'{0!r}'.format(cookiecutter.developer_name).lstrip('ub')}},
     author_email={{'{0!r}'.format(cookiecutter.developer_email).lstrip('ub')}},
     license='MIT',
