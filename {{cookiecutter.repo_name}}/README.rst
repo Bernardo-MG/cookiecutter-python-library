@@ -7,11 +7,11 @@
     :alt: {{ cookiecutter.project_name }} Pypi package page
 
 .. image:: https://readthedocs.org/projects/{{ cookiecutter.distribution_name }}/badge/?version=latest
-    :target: https://readthedocs.org/projects/{{ cookiecutter.distribution_name }}/?badge=latest
+    :target: https://readthedocs.org/projects/{{ cookiecutter.distribution_name }}/en/latest/
     :alt: {{ cookiecutter.project_name }} latest documentation Status
 
 .. image:: https://readthedocs.org/projects/{{ cookiecutter.distribution_name }}/badge/?version=develop
-    :target: https://readthedocs.org/projects/{{ cookiecutter.distribution_name }}/?badge=develop
+    :target: https://readthedocs.org/projects/{{ cookiecutter.distribution_name }}/en/develop/
     :alt: {{ cookiecutter.project_name }} development documentation Status
 
 Describe the project here.
