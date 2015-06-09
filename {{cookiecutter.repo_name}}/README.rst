@@ -52,7 +52,7 @@ The project has been tested in the following versions of the interpreter:
 All other dependencies are indicated on the requirements.txt file.
 The included makefile can install them with the command:
 
-``make requirements``
+``$ make requirements``
 
 Installing
 ~~~~~~~~~~
@@ -62,11 +62,11 @@ installation of the library.
 
 This can be done with the following command:
 
-``make install``
+``$ make install``
 
 Additionally, the project is offered as a `Pypi package`_, and can be installed through pip:
 
-``pip install {{ cookiecutter.distribution_name }}``
+``$ pip install {{ cookiecutter.distribution_name }}``
 
 Collaborate
 -----------

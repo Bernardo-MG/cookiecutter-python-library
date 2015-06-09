@@ -130,7 +130,7 @@ Contents:
 .. toctree::
 :maxdepth: 2
 
-       Home <index>
+       Usage usage
 
     * :ref:`genindex`
 * :ref:`search`
