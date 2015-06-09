@@ -49,21 +49,21 @@ Prerequisites
 `Cookiecutter`_ is required to make use of this template. It can be acquired
 through pip:
 
-``pip install cookiecutter``
+``$ pip install cookiecutter``
 
 Installing
 ~~~~~~~~~~
 
 The template can be used from the command line with the following command:
 
-``cookiecutter gh:bernardo-mg/cookiecutter-python-library``
+``$ cookiecutter gh:bernardo-mg/cookiecutter-python-library``
 
 This will download the template and begin to create a new project.
 
 It is only needed to download the template once. After that, it can be reused
 with the following command:
 
-``cookiecutter cookiecutter-python-library/``
+``$ cookiecutter cookiecutter-python-library/``
 
 Collaborate
 -----------
