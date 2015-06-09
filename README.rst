@@ -2,6 +2,15 @@
 Cookiecutter Python Library
 ===========================
 
+
+.. image:: https://readthedocs.org/projects/cookiecutter-python-library/badge/?version=latest
+    :target: https://readthedocs.org/projects/cookiecutter-python-library/?badge=latest
+    :alt: {{ cookiecutter.project_name }} latest documentation Status
+
+.. image:: https://readthedocs.org/projects/cookiecutter-python-library/badge/?version=develop
+    :target: https://readthedocs.org/projects/cookiecutter-python-library/?badge=develop
+    :alt: {{ cookiecutter.project_name }} development documentation Status
+
 Cookiecutter template for creating general-purpose Python libraries.
 
 While it mostly follows my personal tastes, it offers a series of good 
