@@ -22,12 +22,12 @@ templates_path = ['_templates']
 source_suffix = '.rst'
 
 # The master toctree document.
-master_doc = 'contents'
+master_doc = 'index'
 
 # General information about the project.
-project = '{{ cookiecutter.project_name }}'
-copyright = u'%s, {{ cookiecutter.developer_name }}' % datetime.datetime.now().year
-authors = ['{{ cookiecutter.developer_name }}']
+project = 'Cookiecutter Python Library'
+copyright = u'%s, Bernardo Martínez Garrido' % datetime.datetime.now().year
+authors = ['Bernardo Martínez Garrido']
 
 # The version info for the project.
 #
@@ -63,70 +63,56 @@ else:
 
     # Theme options.
     html_theme_options = {
-        "navbar_fixed_top": "true",
-        "navbar_site_name": "Contents",
+        'navbar_fixed_top': 'true',
+        'navbar_site_name': 'Contents',
         'bootstrap_version': '3',
-        'source_link_position': 'footer',
+        'source_link_position': 'nav',
+        'bootswatch_theme': "sandstone",
     }
 
-# Add any paths that contain custom static files (such as style sheets) here,
-# relative to this directory. They are copied after the builtin static files,
-# so a file named "default.css" will overwrite the builtin "default.css".
+# Custom static files folder.
 html_static_path = ['_static']
 
+# Custom sidebars
+html_sidebars = {'index': ['status.html']}
+
 # Output file base name for HTML help builder.
-htmlhelp_basename = '{{ cookiecutter.project_name }} doc'
+htmlhelp_basename = '%s doc' % project
 
 # -- Options for LaTeX output ---------------------------------------------
 
 latex_elements = {
-    # The paper size ('letterpaper' or 'a4paper').
-    # 'papersize': 'letterpaper',
-
-    # The font size ('10pt', '11pt' or '12pt').
-    # 'pointsize': '10pt',
-
-    # Additional stuff for the LaTeX preamble.
-    # 'preamble': '',
-
-    # Latex figure (float) alignment
-    # 'figure_align': 'htbp',
 }
 
-# Grouping the document tree into LaTeX files. List of tuples
-# (source start file, target name, title,
-#  author, documentclass [howto, manual, or own class]).
+# List of LaTeX documents.
 latex_documents = [
-    (master_doc, '{{ cookiecutter.project_name }}.tex',
-     '{{ cookiecutter.project_name }} Documentation',
+    (master_doc, '%s.tex' % project, '%s Documentation' % project,
      ','.join(authors), 'manual'),
 ]
 
 
 # -- Options for manual page output ---------------------------------------
 
-# One entry per manual page. List of tuples
-# (source start file, name, description, authors, manual section).
+# List of manual pages.
 man_pages = [
-    (master_doc, '{{ cookiecutter.distribution_name }}',
-     '{{ cookiecutter.project_name }} Documentation',
+    (master_doc, project, '%s Documentation' % project,
      [','.join(authors)], 1)
 ]
 
 
 # -- Options for Texinfo output -------------------------------------------
 
-# Grouping the document tree into Texinfo files. List of tuples
-# (source start file, target name, title, author,
-#  dir menu entry, description, category)
+# List of Texinfo documents.
 texinfo_documents = [
-    (master_doc, '{{ cookiecutter.project_name }}',
-     '{{ cookiecutter.project_name }} Documentation',
-     ','.join(authors), '{{ cookiecutter.project_name }}',
-     '{{ cookiecutter.project_short_description }}',
+    (master_doc, project, '%s Documentation' % project,
+     ','.join(authors), project, 'Cookiecutter template for creating Python libraries.',
      'Miscellaneous'),
 ]
 
 
-# Example configuration for intersphinx: refer to the Python standard library.
-intersphinx_mapping = {'https://docs.python.org/': None}
+# -- Intersphinx links ----------------------------------------------------
+
+# Intersphinx mapping.
+intersphinx_mapping = {
+    'https://docs.python.org/': None,
+}

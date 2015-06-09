@@ -44,7 +44,7 @@ autodoc_member_order = 'groupwise'
 
 # General information about the project.
 project = '{{ cookiecutter.project_name }}'
-copyright = u'%s, {{ cookiecutter.developer_name }}' % datetime.datetime.now().year
+copyright = u'{{ cookiecutter.year }}, {{ cookiecutter.developer_name }}'
 authors = ['{{ cookiecutter.developer_name }}']
 
 # The version info for the project.
@@ -126,7 +126,7 @@ man_pages = [
 # List of Texinfo documents.
 texinfo_documents = [
     (master_doc, project, '%s Documentation' % project,
-     ','.join(authors), project, 'API library for the CWR standard format.',
+     ','.join(authors), project, '{{ cookiecutter.project_short_description }}',
      'Miscellaneous'),
 ]
 

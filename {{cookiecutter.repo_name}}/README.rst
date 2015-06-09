@@ -8,7 +8,11 @@
 
 .. image:: https://readthedocs.org/projects/{{ cookiecutter.distribution_name }}/badge/?version=latest
     :target: https://readthedocs.org/projects/{{ cookiecutter.distribution_name }}/?badge=latest
-    :alt: {{ cookiecutter.project_name }} documentation Status
+    :alt: {{ cookiecutter.project_name }} latest documentation Status
+
+.. image:: https://readthedocs.org/projects/{{ cookiecutter.distribution_name }}/badge/?version=develop
+    :target: https://readthedocs.org/projects/{{ cookiecutter.distribution_name }}/?badge=develop
+    :alt: {{ cookiecutter.project_name }} development documentation Status
 
 Describe the project here.
 

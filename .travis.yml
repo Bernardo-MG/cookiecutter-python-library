@@ -1,0 +1,22 @@
+language: python
+python:
+  - "2.7"
+  - "3.4"
+matrix:
+  include:
+    - python: "2.7"
+      env:
+        - DOCS=true
+        - DEPLOY_DOCS=true
+    - python: "3.4"
+      env: DOCS=true
+    - python: "2.7"
+      env: COVERAGE=true
+
+before_install:
+  - chmod +x ./.scripts/deploy_docs.sh
+install:
+  - pip install tox
+script:
+  - if [ ! -z "$DOCS" ]; then tox -e docs; fi
+  - if [ ! -z "$DEPLOY_DOCS" ]; then ./.scripts/deploy_docs.sh; fi
