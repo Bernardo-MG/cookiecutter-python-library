@@ -10,5 +10,8 @@
     "project_short_description": "A library for Python",
     "release_date": "2015-xx-xx",
     "year": "2015",
-    "version": "0.1.0"
+    "version": "0.1.0",
+    "_copy_without_render": [
+        "_templates/layout.html"
+    ]
 }
