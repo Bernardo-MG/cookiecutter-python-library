@@ -7,8 +7,6 @@ matrix:
         - DEPLOY_DOCS=true
     - python: "3.4"
       env: DOCS=true
-    - python: "2.7"
-      env: COVERAGE=true
 
 before_install:
   - chmod +x ./.scripts/deploy_docs.sh
