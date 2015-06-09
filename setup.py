@@ -7,8 +7,6 @@ from os.path import join
 from setuptools import find_packages, setup
 from setuptools.command.test import test as test_command
 
-import cwr
-
 """
 PyPI configuration module.
 
