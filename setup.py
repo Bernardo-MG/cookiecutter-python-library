@@ -50,7 +50,7 @@ setup(
     include_package_data=True,
     package_data={
     },
-    version=cwr.__version__,
+    version='0.1.0',
     description='Cookiecutter template for Python libraries.',
     author='Bernardo Martínez Garrido',
     author_email='programming@wandrell.com',
