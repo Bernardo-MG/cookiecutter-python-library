@@ -8,7 +8,7 @@ Cookiecutter Python Library
     :alt: Cookiecutter Python Library latest documentation Status
 
 .. image:: https://readthedocs.org/projects/cookiecutter-python-library/badge/?version=develop
-    :target: http://cookiecutter-python-library.readthedocs.org/en/release/
+    :target: http://cookiecutter-python-library.readthedocs.org/en/develop/
     :alt: Cookiecutter Python Library development documentation Status
 
 Cookiecutter template for creating general-purpose Python libraries.
