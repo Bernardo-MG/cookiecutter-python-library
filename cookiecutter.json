@@ -12,6 +12,6 @@
     "year": "2015",
     "version": "0.1.0",
     "_copy_without_render": [
-        "_templates/layout.html"
+        "layout.html"
     ]
 }

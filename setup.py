@@ -1,8 +1,11 @@
 # -*- coding: utf-8 -*-
+import ast
+import re
 import sys
 import io
 from os.path import dirname
 from os.path import join
+from os import path
 
 from setuptools import find_packages, setup
 from setuptools.command.test import test as test_command
@@ -15,9 +18,24 @@ This is prepared for easing the generation of deployment files.
 
 __license__ = 'MIT'
 
+# Regular expression for the version
+_version_re = re.compile(r'__version__\s+=\s+(.*)')
 
 # Test requirements
 _tests_require = ['tox']
+
+# Path to the project's root
+here = path.abspath(path.dirname(__file__))
+
+# Gets the long description from the readme
+with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
+    long_description = f.read()
+
+# Gets the version for the source folder __init__.py file
+with open('cwr/__init__.py', 'rb', encoding='utf-8') as f:
+    version = f.read()
+    version = _version_re.search(version).group(1)
+    version = str(ast.literal_eval(version.rstrip()))
 
 
 # Gets the long description from the readme
