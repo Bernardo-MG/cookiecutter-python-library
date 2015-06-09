@@ -3,6 +3,7 @@ import ast
 import re
 import sys
 import io
+from codecs import open
 from os.path import dirname
 from os.path import join
 from os import path
