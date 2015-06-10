@@ -100,8 +100,11 @@ else:
         'navbar_fixed_top': 'true',
         'navbar_site_name': 'Contents',
         'bootstrap_version': '3',
-        'source_link_position': 'nav',
-        'bootswatch_theme': "sandstone",
+        'source_link_position': 'footer',
+        'bootswatch_theme': 'sandstone',
+        'navbar_links': [
+            ('Github', 'https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}', True),
+        ],
     }
 
 # Custom static files folder.
