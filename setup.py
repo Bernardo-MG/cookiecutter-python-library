@@ -1,6 +1,4 @@
 # -*- coding: utf-8 -*-
-import ast
-import re
 import sys
 import io
 from codecs import open
@@ -18,9 +16,6 @@ This is prepared for easing the generation of deployment files.
 """
 
 __license__ = 'MIT'
-
-# Regular expression for the version
-_version_re = re.compile(r'__version__\s+=\s+(.*)')
 
 # Test requirements
 _tests_require = ['tox']
