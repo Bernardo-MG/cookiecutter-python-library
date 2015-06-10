@@ -5,6 +5,7 @@ import sys
 import io
 from os.path import dirname
 from os.path import join
+from codecs import open
 
 from setuptools import find_packages, setup
 from setuptools.command.test import test as test_command
@@ -32,7 +33,7 @@ def read(*names, **kwargs):
     ).read()
 
 # Gets the version for the source folder __init__.py file
-with open('../../{{ cookiecutter.package_name }}/__init__.py', 'rb', encoding='utf-8') as f:
+with open('{{ cookiecutter.package_name }}/__init__.py', 'rb', encoding='utf-8') as f:
     version_lib = f.read()
     version_lib = _version_re.search(version_lib).group(1)
     version_lib = str(ast.literal_eval(version_lib.rstrip()))
