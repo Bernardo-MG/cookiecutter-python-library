@@ -21,7 +21,7 @@ Features
 --------
 
 - Travis configuration file
-- Customized setup.py module, using tox for the tests and requiring little additional configuration
+- Customized setup.py module to minimize configuration, and using tox for the tests
 - Prepared to run tests through tox
 - Prepared to run tests on Python 2.6, 2.7, 3.2, 3.3, 3.4
 - Prepared to run tests on pypy and pypy 3
