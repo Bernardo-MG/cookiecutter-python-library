@@ -67,7 +67,7 @@ else:
         'navbar_site_name': 'Contents',
         'bootstrap_version': '3',
         'source_link_position': 'footer',
-        'bootswatch_theme': '"sandstone',
+        'bootswatch_theme': 'yeti',
         'navbar_links': [
             ('Github', 'https://github.com/Bernardo-MG/cookiecutter-python-library', True),
         ],
