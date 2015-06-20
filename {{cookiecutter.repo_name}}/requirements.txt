@@ -1,4 +1,4 @@
-# Deployment
+# Installation and deployment
 setuptools>=17.0
 twine>=1.5.0
 

@@ -1,2 +1,6 @@
 # Documentation
 sphinx_bootstrap_theme>=0.4.6
+
+# Installation and deployment
+setuptools>=17.1.1
+cookiecutter>=0.7.2
