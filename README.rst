@@ -30,8 +30,8 @@ Documentation
 
 Check the `latest docs`_ for the most current version of the documentation.
 
-They are generated with the help of `Sphinx`_. The source files for this are
-stored in the docs folder.
+You can also create the documentation from the source files, kept in the 'docs'
+folder, with the help of Sphinx.
 
 Building the code
 -----------------
@@ -42,7 +42,7 @@ code and Jinja2 labels.
 Prerequisites
 ~~~~~~~~~~~~~
 
-`Cookiecutter`_ is required to make use of this template. It can be acquired
+Cookiecutter is required to make use of this template. It can be acquired
 through pip:
 
 ``$ pip install cookiecutter``
@@ -92,7 +92,6 @@ The project has been released under the `MIT License`_.
 .. _Coveralls: https://coveralls.io
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
 .. _project issues page: https://github.com/Bernardo-MG/cookiecutter-python-library/issues
-.. _Sphinx: http://sphinx-doc.org/
-.. _latest docs: http://bmg-cc-python-lib.readthedocs.org
+.. _latest docs: http://cookiecutter-python-library.readthedocs.org/en/latest/
 .. _GitHub project page: https://github.com/Bernardo-MG/cookiecutter-python-library
 .. _MIT License: http://www.opensource.org/licenses/mit-license.php
