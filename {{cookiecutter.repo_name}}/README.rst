@@ -7,7 +7,7 @@
     :alt: {{ cookiecutter.project_name }} Pypi package page
 
 .. image:: https://readthedocs.org/projects/{{ cookiecutter.distribution_name }}/badge/?version=latest
-    :target: http://{{ cookiecutter.repo_name }}.readthedocs.org/en/latest/
+    :target: http://{{ cookiecutter.distribution_name }}.readthedocs.org/en/latest/
     :alt: {{ cookiecutter.project_name }} latest documentation Status
 
 Describe the project here.
@@ -98,6 +98,6 @@ The project has been released under the `MIT License`_.
 
 .. _project issues page: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/issues
 .. _Sphinx: http://sphinx-doc.org/
-.. _latest docs: http://{{ cookiecutter.repo_name }}.readthedocs.org/en/latest/
+.. _latest docs: http://{{ cookiecutter.distribution_name }}.readthedocs.org/en/latest/
 .. _GitHub project page: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}
 .. _MIT License: http://www.opensource.org/licenses/mit-license.php
