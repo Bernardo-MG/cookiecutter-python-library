@@ -26,8 +26,9 @@ Documentation
 
 Check the `latest docs`_ for the most current version of the documentation.
 
-They are generated with the help of `Sphinx`_. The source files for this are
-stored in the docs folder.
+You can also create the documentation from the source files, kept in the 'docs'
+folder, with the help of Sphinx. For this use the makefile, or the make.bat
+file, contained on that folder.
 
 Building the code
 -----------------
