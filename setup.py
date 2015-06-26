@@ -77,6 +77,8 @@ setup(
     ],
     long_description=read('README.rst'),
     install_requires=[
+        'cookiecutter',
+        'setuptools',
         'sphinx_bootstrap_theme',
     ],
     tests_require=_tests_require,

@@ -84,6 +84,7 @@ setup(
     long_description=read('README.rst'),
     install_requires=[
         'setuptools',
+        'sphinx_bootstrap_theme',
         'twine',
     ],
     tests_require=_tests_require,
