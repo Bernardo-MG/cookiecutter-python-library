@@ -13,5 +13,5 @@ before_install:
 install:
   - pip install tox
 script:
-  - if [ ! -z "$DOCS" ]; then tox -e docs; fi
+  - if [ ! -z "$DOCS" ] && [ "$DOCS" == "true" ]; then tox -e docs; fi
   - if [ ! -z "$DEPLOY_DOCS" ]; then ./.scripts/deploy_docs.sh; fi

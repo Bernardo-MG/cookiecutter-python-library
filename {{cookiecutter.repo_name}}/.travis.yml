@@ -28,7 +28,7 @@ install:
   - pip install tox
 script:
   - ./.scripts/run_tests.sh
-  - if [ ! -z "$DOCS" ]; then tox -e docs; fi
+  - if [ ! -z "$DOCS" ] && [ "$DOCS" == "true" ]; then tox -e docs; fi
   - if [ ! -z "$DEPLOY_DOCS" ]; then ./.scripts/deploy_docs.sh; fi
-  - if [ ! -z "$COVERAGE" ]; then tox -e coverage; fi
+  - if [ ! -z "$COVERAGE" ] && [ "$COVERAGE" == "true" ]; then tox -e coverage; fi
   - if [ ! -z "$JYTHON" ]; then ./.scripts/test_jython.sh; fi
