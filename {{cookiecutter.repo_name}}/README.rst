@@ -30,8 +30,8 @@ You can also create the documentation from the source files, kept in the 'docs'
 folder, with the help of Sphinx. For this use the makefile, or the make.bat
 file, contained on that folder.
 
-Building the code
------------------
+Usage
+-----
 
 The application has been coded in Python, without using any particular
 framework.
@@ -58,47 +58,45 @@ The included makefile can install them with the command:
 Installing
 ~~~~~~~~~~
 
-The project includes a setup.py file, along a makefile allowing direct
-installation of the library.
-
-This can be done with the following command:
-
-``$ make install``
-
-Additionally, the project is offered as a `Pypi package`_, and can be installed through pip:
+The project is offered as a `Pypi package`_, and using pip is the preferred way
+to install it. For this use the following command;
 
 ``$ pip install {{ cookiecutter.distribution_name }}``
+
+If manual installation is required, the project includes a setup.py file, along
+a makefile allowing direct installation of the library, which can be done with
+the following command:
+
+``$ make install``
 
 Collaborate
 -----------
 
-The project is still under ongoing development, and any help will be well
-received.
+Any kind of help with the project will be well received, and there are two main ways to give such help:
 
-There are two ways to help: reporting errors and asking for extensions through
-the issues management, or forking the repository and extending the project.
+- Reporting errors and asking for extensions through the issues management
+- or forking the repository and extending the project
 
 Issues management
 ~~~~~~~~~~~~~~~~~
 
-Issues are managed at the GitHub `project issues page`_.
-
-Everybody is allowed to report bugs or ask for features.
+Issues are managed at the GitHub `project issues tracker`_, where any Github
+user may report bugs or ask for new features.
 
 Getting the code
 ~~~~~~~~~~~~~~~~
 
-The code can be found at the `GitHub project page`_.
-
-Feel free to fork it, and share the changes.
+If you wish to fork or modify the code, visit the `GitHub project page`_, where
+the latest versions are always kept. Check the 'master' branch for the latest
+release, and the 'develop' for the current, and stable, development version.
 
 License
 -------
 
 The project has been released under the `MIT License`_.
 
-.. _project issues page: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/issues
-.. _Sphinx: http://sphinx-doc.org/
-.. _latest docs: http://{{ cookiecutter.distribution_name }}.readthedocs.org/en/latest/
 .. _GitHub project page: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}
+.. _latest docs: http://{{ cookiecutter.distribution_name }}.readthedocs.org/en/latest/
 .. _MIT License: http://www.opensource.org/licenses/mit-license.php
+.. _project issues tracker: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/issues
+.. _Sphinx: http://sphinx-doc.org/
