@@ -91,7 +91,8 @@ The project has been released under the `MIT License`_.
 
 .. _Coveralls: https://coveralls.io
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _GitHub project page: https://github.com/Bernardo-MG/cookiecutter-python-library
 .. _project issues page: https://github.com/Bernardo-MG/cookiecutter-python-library/issues
 .. _latest docs: http://cookiecutter-python-library.readthedocs.org/en/latest/
-.. _GitHub project page: https://github.com/Bernardo-MG/cookiecutter-python-library
 .. _MIT License: http://www.opensource.org/licenses/mit-license.php
+.. _Sphinx: http://sphinx-doc.org/
