@@ -3,9 +3,11 @@
 import unittest
 
 """
-CWR file name encoder tests.
+Placeholder tests.
 
 The following cases are tested:
+
+- A placeholder test that is always true passes
 """
 
 __author__ = '{{ cookiecutter.developer_name }}'
@@ -13,13 +15,19 @@ __license__ = 'MIT'
 __status__ = 'Development'
 
 
-class TestFileNameCWREncodeValid(unittest.TestCase):
+class TestPlaceholder(unittest.TestCase):
     """
-    Tests that CWRFileNameEncoder encodes valid FileTags (using the new format)
+    Placeholder for a test case.
     """
 
     def setUp(self):
+        """
+        Here the tests environment would be prepared.
+        """
         pass
 
     def test_true(self):
+        """
+        A placeholder test which is always true.
+        """
         self.assertTrue(True)
