@@ -2,16 +2,15 @@
 Cookiecutter Python Library
 ===========================
 
-
-.. image:: https://readthedocs.org/projects/cookiecutter-python-library/badge/?version=latest
-    :target: http://cookiecutter-python-library.readthedocs.org/en/latest/
-    :alt: Cookiecutter Python Library latest documentation Status
-
 Cookiecutter template for creating general-purpose Python libraries.
 
 While it mostly follows my personal tastes, it offers a series of good 
 practices which include deployment files, makefile, testing, and the use of 
 various free services, such as Github, Travis and Pypi.
+
+.. image:: https://readthedocs.org/projects/cookiecutter-python-library/badge/?version=latest
+    :target: http://cookiecutter-python-library.readthedocs.org/en/latest/
+    :alt: Cookiecutter Python Library latest documentation Status
 
 Features
 --------
