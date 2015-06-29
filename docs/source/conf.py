@@ -26,6 +26,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Cookiecutter Python Library'
+project_safe = project.replace(' ', '_')
 copyright = u'%s, Bernardo Martínez Garrido' % datetime.datetime.now().year
 authors = [u'Bernardo Martínez Garrido']
 
@@ -86,7 +87,7 @@ latex_elements = {
 
 # List of LaTeX documents.
 latex_documents = [
-    (master_doc, '%s.tex' % project, '%s Documentation' % project,
+    (master_doc, '%s.tex' % project_safe, '%s Documentation' % project,
      ','.join(authors), 'manual'),
 ]
 

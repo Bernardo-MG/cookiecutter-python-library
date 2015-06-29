@@ -57,8 +57,9 @@ autodoc_member_order = 'groupwise'
 
 # General information about the project.
 project = '{{ cookiecutter.project_name }}'
+project_safe = project.replace(' ', '_')
 copyright = u'{{ cookiecutter.year }}, {{ cookiecutter.developer_name }}'
-authors = ['{{ cookiecutter.developer_name }}']
+authors = [u'{{ cookiecutter.developer_name }}']
 
 # The version info for the project.
 #
@@ -120,7 +121,7 @@ latex_elements = {
 
 # List of LaTeX documents.
 latex_documents = [
-    (master_doc, '%s.tex' % project, '%s Documentation' % project,
+    (master_doc, '%s.tex' % project_safe, '%s Documentation' % project,
      ','.join(authors), 'manual'),
 ]
 
