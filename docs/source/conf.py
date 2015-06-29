@@ -27,7 +27,7 @@ master_doc = 'index'
 # General information about the project.
 project = 'Cookiecutter Python Library'
 copyright = u'%s, Bernardo Martínez Garrido' % datetime.datetime.now().year
-authors = ['Bernardo Martínez Garrido']
+authors = [u'Bernardo Martínez Garrido']
 
 # The version info for the project.
 #
