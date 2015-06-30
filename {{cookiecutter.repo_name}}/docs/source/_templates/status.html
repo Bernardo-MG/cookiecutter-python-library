@@ -1,62 +1,37 @@
-<div style="padding-left: 10px; padding-right: 10px;">
-    <h3 style="padding-bottom: 1px; border-bottom: 1px solid #ccc;">Status</h3>
+<div>
+    <h3>About the
+        code</h3>
 
-    <h4>Github</h4>
-
-    <p style="height:22px">
-        <a href="https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}"
-           alt="Github forks">
-            <img src="https://img.shields.io/github/forks/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}.svg"/>
-        </a>
-
-        <a href="https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}"
-           alt="Github stars">
-            <img src="https://img.shields.io/github/stars/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}.svg"/>
-        </a>
+    <p>
+        The code is open source and freely accessible. If you want to do any
+        kind of modification just fork it from the repository.
     </p>
 
-    <h4>Pypi</h4>
+    <dl>
+        <dt>Python version:</dt>
+        <dd>2.6, 2.7, 3.2, 3.3, 3.4, pypy, pypy3, Jython</dd>
+        <dt>License:</dt>
+        <dd><a href="http://opensource.org/licenses/MIT">MIT</a></dd>
+        <dt>SCM:</dt>
+        <dd><a
+                href="https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}">GitHub</a>
+        </dd>
+        <dt>CI:</dt>
+        <dd><a
+                href="https://travis-ci.org/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}">Travis</a>
+        </dd>
+        <dt>Coverage:</dt>
+        <dd><a
+                href="https://coveralls.io/r/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}">Coveralls</a>
+        </dd>
+        <dt>Code Quality:</dt>
+        <dd><a
+                href="https://landscape.io/github/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/master">Landscape</a>
+        </dd>
+        <dt>Distribution repository:</dt>
+        <dd>
+            <a href="https://pypi.python.org/pypi/{{ cookiecutter.package_name }}">Pypi</a>
+        </dd>
+    </dl>
 
-    <p style="height:22px">
-        <a href="https://pypi.python.org/pypi/{{ cookiecutter.package_name }}"
-           alt="CWR-API Pypi package page">
-            <img src="https://badge.fury.io/py/{{ cookiecutter.package_name }}.svg"/>
-        </a>
-    </p>
-
-    <h4>ReadTheDocs</h4>
-
-    <p style="height:22px">
-        <a href="http://cwr-dataapi.readthedocs.org/en/latest/"
-           alt="Documentation status">
-            <img src="https://readthedocs.org/projects/{{ cookiecutter.repo_name }}/badge/?version=latest"/>
-        </a>
-    </p>
-
-    <h4>Travis</h4>
-
-    <p style="height:22px">
-        <a href="https://travis-ci.org/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}"
-           alt="Travis CI">
-            <img src="https://api.travis-ci.org/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}.svg"/>
-        </a>
-    </p>
-
-    <h4>Coveralls</h4>
-
-    <p style="height:22px">
-        <a href="https://coveralls.io/r/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}"
-           alt="Coveralls coverage reports">
-            <img src="https://coveralls.io/repos/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/badge.svg"/>
-        </a>
-    </p>
-
-    <h4>Landscape</h4>
-
-    <p style="height:22px">
-        <a href="https://landscape.io/github/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/master"
-           alt="Landscape code health">
-            <img src="https://landscape.io/github/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/master/landscape.svg?style=flat"/>
-        </a>
-    </p>
 </div>

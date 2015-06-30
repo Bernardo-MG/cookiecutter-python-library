@@ -70,7 +70,9 @@ else:
         'source_link_position': 'footer',
         'bootswatch_theme': 'yeti',
         'navbar_links': [
-            ('Github', 'https://github.com/Bernardo-MG/cookiecutter-python-library', True),
+            ('Github',
+             'https://github.com/Bernardo-MG/cookiecutter-python-library',
+             True),
         ],
     }
 
