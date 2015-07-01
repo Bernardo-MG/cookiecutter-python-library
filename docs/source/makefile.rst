@@ -8,6 +8,7 @@ way to control the project's flow.
 It is possible to get all the available tasks with the command:
 
 .. code-block:: sh
+
     $ make help
 
 But there is a small summary:

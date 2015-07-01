@@ -19,12 +19,14 @@ In all of them, running the tests for a particular environment is done with
 the usual command:
 
 .. code-block:: sh
+
     $ tox -e env_name
 
 Coverage
 ========
 
 .. code-block:: sh
+
     $ tox -e coverage
 
 The coverage environment runs the tests and then generates the coverage 
@@ -37,6 +39,7 @@ Documentation check
 ===================
 
 .. code-block:: sh
+
     $ tox -e docs
 
 This environment will validate the Sphinx tests. It is a good idea
@@ -46,6 +49,7 @@ Various style checks
 ====================
 
 .. code-block:: sh
+
     $ tox -e check
 
 By default Travis won't run this environment, as it is too prone to failures.
