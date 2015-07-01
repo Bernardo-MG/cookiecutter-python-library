@@ -18,12 +18,14 @@ special cases.
 In all of them, running the tests for a particular environment is done with
 the usual command:
 
-``$ tox -e env_name``
+.. code-block:: sh
+    $ tox -e env_name
 
 Coverage
 ========
 
-``$ tox -e coverage``
+.. code-block:: sh
+    $ tox -e coverage
 
 The coverage environment runs the tests and then generates the coverage 
 report. This will be set to `Coveralls <https://coveralls.io/>`_.
@@ -34,7 +36,8 @@ additional complication.
 Documentation check
 ===================
 
-``$ tox -e docs``
+.. code-block:: sh
+    $ tox -e docs
 
 This environment will validate the Sphinx tests. It is a good idea
 running it before deploying the docs.
@@ -42,7 +45,8 @@ running it before deploying the docs.
 Various style checks
 ====================
 
-``$ tox -e check``
+.. code-block:: sh
+    $ tox -e check
 
 By default Travis won't run this environment, as it is too prone to failures.
 It will check the readme, the manifest and all the code, to check they conform

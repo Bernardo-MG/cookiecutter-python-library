@@ -1,5 +1,6 @@
 # Documentation
 sphinx_bootstrap_theme>=0.4.6
+Pygments>=2.0.2
 
 # Installation and deployment
 setuptools>=17.1.1
