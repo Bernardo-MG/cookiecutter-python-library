@@ -27,6 +27,3 @@ Contents:
    tests
    makefile
    doc_site
-
-* :ref:`genindex`
-* :ref:`search`

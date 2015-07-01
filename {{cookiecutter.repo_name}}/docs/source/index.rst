@@ -40,6 +40,3 @@ Contents:
    :maxdepth: 2
 
    usage
-
-* :ref:`genindex`
-* :ref:`search`
