@@ -11,6 +11,9 @@ Describe the project here.
 .. image:: https://readthedocs.org/projects/{{ cookiecutter.distribution_name }}/badge/?version=latest
     :target: http://{{ cookiecutter.distribution_name }}.readthedocs.org/en/latest/
     :alt: {{ cookiecutter.project_name }} latest documentation Status
+.. image:: https://readthedocs.org/projects/{{ cookiecutter.distribution_name }}/badge/?version=develop
+    :target: http://{{ cookiecutter.distribution_name }}.readthedocs.org/en/develop/
+    :alt: {{ cookiecutter.project_name }} development documentation Status
 
 Features
 --------

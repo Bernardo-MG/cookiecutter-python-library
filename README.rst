@@ -11,6 +11,9 @@ various free services, such as Github, Travis and Pypi.
 .. image:: https://readthedocs.org/projects/cookiecutter-python-library/badge/?version=latest
     :target: http://cookiecutter-python-library.readthedocs.org/en/latest/
     :alt: Cookiecutter Python Library latest documentation Status
+.. image:: https://readthedocs.org/projects/cookiecutter-python-library/badge/?version=develop
+    :target: http://cookiecutter-python-library.readthedocs.org/en/develop/
+    :alt: Cookiecutter Python Library development documentation Status
 
 Features
 --------
