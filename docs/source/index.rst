@@ -2,7 +2,7 @@
 Cookiecutter Python Library
 ###########################
 
-This is the documentation for Wandrell's Cookiecutter Python Library.
+This is the documentation for the Cookiecutter Python Library.
 
 Created to fit my own tastes, this library offers a series of good practices,
 and a bunch of configurations I've found useful.
