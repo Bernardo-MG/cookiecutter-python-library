@@ -37,6 +37,17 @@ version = '0.1.0'
 # The full version, including alpha/beta/rc tags.
 release = version
 
+# Services information
+scm_name = 'Github'
+scm_url = 'https://github.com/Bernardo-MG/cookiecutter-python-library'
+ci_name = 'Travis'
+ci_url = 'https://travis-ci.org/Bernardo-MG/cookiecutter-python-library'
+
+# General information
+license_name = 'MIT'
+license_url = 'http://opensource.org/licenses/MIT'
+python_versions = '2.6, 2.7, 3.2, 3.3, 3.4, pypy, pypy3'
+
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 exclude_patterns = []
@@ -70,17 +81,28 @@ else:
         'source_link_position': 'footer',
         'bootswatch_theme': 'yeti',
         'navbar_links': [
-            ('Github',
-             'https://github.com/Bernardo-MG/cookiecutter-python-library',
+            (scm_name,
+             scm_url,
              True),
         ],
     }
 
 # Custom sidebars
-html_sidebars = {'index': ['status.html']}
+html_sidebars = {'index': ['about_code.html']}
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = '%s doc' % project
+
+# HTML context
+html_context = {
+    'scm_name': scm_name,
+    'scm_url': scm_url,
+    'ci_name': ci_name,
+    'ci_url': ci_url,
+    'license_name': license_name,
+    'license_url': license_url,
+    'python_versions': python_versions,
+}
 
 # -- Options for LaTeX output ---------------------------------------------
 
