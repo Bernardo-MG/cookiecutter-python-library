@@ -1,17 +1,17 @@
 language: python
+python:
+  - "3.4"
+env:
+  - TEST_DOCS=true DEPLOY_DOCS=false
 matrix:
   include:
     - python: "2.7"
-      env:
-        - DOCS=true
-        - DEPLOY_DOCS=true
-    - python: "3.4"
-      env: DOCS=true
+      env: TEST_DOCS=true DEPLOY_DOCS=true PULL_REQUEST=$TRAVIS_PULL_REQUEST SCM_BRANCH=$TRAVIS_BRANCH
 
 before_install:
   - chmod +x ./.scripts/deploy_docs.sh
 install:
   - pip install tox
 script:
-  - if [ ! -z "$DOCS" ] && [ "$DOCS" == "true" ]; then tox -e docs; fi
-  - if [ ! -z "$DEPLOY_DOCS" ]; then ./.scripts/deploy_docs.sh; fi
+  - if [ ! -z "TEST_DOCS" ] && [ "TEST_DOCS" == "true" ]; then tox -e docs; fi
+  - ./.scripts/deploy_docs.sh
