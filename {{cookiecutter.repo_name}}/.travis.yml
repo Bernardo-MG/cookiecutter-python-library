@@ -23,13 +23,16 @@ matrix:
 
 before_install:
   - chmod +x ./.scripts/run_tests.sh
+  - chmod +x ./.scripts/run_doc_tests.sh
+  - chmod +x ./.scripts/run_coverage_tests.sh
   - chmod +x ./.scripts/test_jython.sh
   - chmod +x ./.scripts/deploy_docs.sh
 install:
   - pip install tox
 script:
   - ./.scripts/run_tests.sh
-  - if [ "$TEST_DOCS" == "true" ]; then tox -e docs; fi
-  - ./.scripts/deploy_docs.sh
-  - if [ "$COVERAGE" == "true" ]; then tox -e coverage; fi
+  - ./.scripts/run_doc_tests.sh
+  - ./.scripts/run_coverage_tests.sh
   - ./.scripts/test_jython.sh;
+after_success:
+  - ./.scripts/deploy_docs.sh
