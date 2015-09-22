@@ -4,7 +4,7 @@
 if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$DEPLOY_DOCS" == "true" ] && [[ "$TRAVIS_BRANCH" == "master" || "$TRAVIS_BRANCH" == "develop" ]]; then
 
    echo "Deploying docs"
-   curl -X POST http://readthedocs.org/build/cwr-dataapi
+   curl -X POST http://readthedocs.org/build/{{ cookiecutter.distribution_name }}
 
 else
 
