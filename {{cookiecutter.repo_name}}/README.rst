@@ -33,12 +33,6 @@ You can also create the documentation from the source files, kept in the 'docs'
 folder, with the help of Sphinx. For this use the makefile, or the make.bat
 file, contained on that folder.
 
-Usage
------
-
-The application has been coded in Python, without using any particular
-framework.
-
 Prerequisites
 ~~~~~~~~~~~~~
 
@@ -72,6 +66,12 @@ the following command:
 
 ``$ make install``
 
+Usage
+-----
+
+The application has been coded in Python, without using any particular
+framework.
+
 Collaborate
 -----------
 
@@ -100,6 +100,7 @@ The project has been released under the `MIT License`_.
 
 .. _GitHub project page: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}
 .. _latest docs: http://{{ cookiecutter.distribution_name }}.readthedocs.org/en/latest/
+.. _Pypi package: https://pypi.python.org/pypi/{{ cookiecutter.distribution_name }}
 .. _MIT License: http://www.opensource.org/licenses/mit-license.php
 .. _project issues tracker: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/issues
 .. _Sphinx: http://sphinx-doc.org/
