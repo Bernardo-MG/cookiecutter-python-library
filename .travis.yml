@@ -10,6 +10,7 @@ matrix:
 
 before_install:
   - chmod +x ./.scripts/deploy_docs.sh
+  - chmod +x ./.scripts/run_doc_tests.sh
 install:
   - pip install tox
 script:
