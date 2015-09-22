@@ -45,13 +45,19 @@ code and Jinja2 labels.
 Prerequisites
 ~~~~~~~~~~~~~
 
-Cookiecutter is required to make use of this template. It can be acquired
+`Cookiecutter`_ is required to make use of this template. It can be acquired
 through pip:
 
 ``$ pip install cookiecutter``
 
 Of course, a Python interpreter is also required. To find the valid versions
 check the Cookiecutter page.
+
+All other dependencies are indicated on the requirements.txt file.
+These can be installed with the included makefile by using the following
+command:
+
+``$ make requirements``
 
 Installing and creating a new project
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

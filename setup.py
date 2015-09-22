@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
 import sys
 import io
-from codecs import open
 from os.path import dirname
 from os.path import join
-from os import path
 
 from setuptools import find_packages, setup
 from setuptools.command.test import test as test_command
@@ -20,13 +18,6 @@ __license__ = 'MIT'
 # Test requirements
 _tests_require = ['tox']
 
-# Path to the project's root
-here = path.abspath(path.dirname(__file__))
-
-# Gets the long description from the readme
-with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
-    long_description = f.read()
-
 
 # Gets the long description from the readme
 def read(*names, **kwargs):
@@ -36,6 +27,7 @@ def read(*names, **kwargs):
     ).read()
 
 
+# For running tox tests
 class _ToxTester(test_command):
     def finalize_options(self):
         test_command.finalize_options(self)
