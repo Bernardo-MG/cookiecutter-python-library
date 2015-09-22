@@ -7,14 +7,15 @@ python:
   - "3.4"
   - "pypy"
   - "pypy3"
+env:
+  - DEPLOY=false DEPLOY_DOCS=false COVERAGE=false TEST_DOCS=false JYTHON=false PYTHON_VERSION=$TRAVIS_PYTHON_VERSION
 matrix:
   include:
     - python: "2.7"
       env:
-        - DOCS=true
-        - DEPLOY_DOCS=true
+        - TEST_DOCS=true DEPLOY_DOCS=true PULL_REQUEST=$TRAVIS_PULL_REQUEST SCM_BRANCH=$TRAVIS_BRANCH
     - python: "3.4"
-      env: DOCS=true
+      env: TEST_DOCS=true
     - python: "2.7"
       env: COVERAGE=true
     - python: "2.7"
@@ -28,7 +29,7 @@ install:
   - pip install tox
 script:
   - ./.scripts/run_tests.sh
-  - if [ ! -z "$DOCS" ] && [ "$DOCS" == "true" ]; then tox -e docs; fi
-  - if [ ! -z "$DEPLOY_DOCS" ]; then ./.scripts/deploy_docs.sh; fi
-  - if [ ! -z "$COVERAGE" ] && [ "$COVERAGE" == "true" ]; then tox -e coverage; fi
-  - if [ ! -z "$JYTHON" ]; then ./.scripts/test_jython.sh; fi
+  - if [ "$TEST_DOCS" == "true" ]; then tox -e docs; fi
+  - ./.scripts/deploy_docs.sh
+  - if [ "$COVERAGE" == "true" ]; then tox -e coverage; fi
+  - ./.scripts/test_jython.sh;

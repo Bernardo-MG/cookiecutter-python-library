@@ -2,6 +2,9 @@
 # This script runs the tests using Jython
 #
 # It makes use of Pyenv to set up the interpreter
+#
+# The following environmental variables are used:
+# - JYTHON: boolean, control flag for running the tests, should be true to run these tests
 
 if [ "$JYTHON" == "true" ]; then
 
