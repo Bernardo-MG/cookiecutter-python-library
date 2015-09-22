@@ -6,13 +6,13 @@ env:
 matrix:
   include:
     - python: "2.7"
-      env: TEST_DOCS=true DEPLOY_DOCS=true PULL_REQUEST=$TRAVIS_PULL_REQUEST SCM_BRANCH=$TRAVIS_BRANCH
+      env: DEPLOY_DOCS=true PULL_REQUEST=$TRAVIS_PULL_REQUEST SCM_BRANCH=$TRAVIS_BRANCH
 
 before_install:
   - chmod +x ./.scripts/deploy_docs.sh
 install:
   - pip install tox
 script:
-  - if [ ! -z "TEST_DOCS" ] && [ "TEST_DOCS" == "true" ]; then tox -e docs; fi
+  - ./.scripts/run_doc_tests.sh
 after_success:
   - ./.scripts/deploy_docs.sh
