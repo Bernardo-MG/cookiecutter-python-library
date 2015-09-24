@@ -1,18 +1,7 @@
-#####
+=====
 Usage
-#####
+=====
 
-************
-Installation
-************
+Describe here how to use the library with some general use examples.
 
-As the library is kept on pypi, acquiring it is very easy. Just run the
-following command:
-
-``$ pip install {{ cookiecutter.distribution_name }}``
-
-********
-Examples
-********
-
-Add here information about how to set up the library, and some examples.
+Any detailed topic should go into it's own section.

@@ -1,7 +1,10 @@
+# Installation and deployment
+setuptools>=18.3.2
+twine>=1.6.1
+
+# Cookiecutter
+cookiecutter>=1.0.0
+
 # Documentation
 sphinx-docs-theme>=0.1.0
 Pygments>=2.0.2
-
-# Installation and deployment
-setuptools>=18.3.2
-cookiecutter>=1.0.0

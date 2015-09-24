@@ -7,6 +7,7 @@ import ast
 import re
 import sys
 import os
+import datetime
 from codecs import open
 from os import path
 
@@ -85,34 +86,37 @@ todo_include_todos = False
 
 # -- Options for HTML output ----------------------------------------------
 
-try:
-    import sphinx_bootstrap_theme
-except:
-    from warnings import warn
+import sphinx_docs_theme
 
-    warn("I would like to use the sphinx bootstrap theme, but can't find it.\n"
-         "'pip install sphinx_bootstrap_theme' to fix.")
-else:
-    # Activate the theme.
-    html_theme = 'bootstrap'
-    html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
+# Activate the theme.
+html_theme = 'sphinx_docs_theme'
+html_theme_path = sphinx_docs_theme.get_html_theme_path()
 
-    # Theme options.
-    html_theme_options = {
-        'navbar_fixed_top': 'true',
-        'navbar_site_name': 'Contents',
-        'bootstrap_version': '3',
-        'source_link_position': 'footer',
-        'bootswatch_theme': 'yeti',
-        'navbar_links': [
-            ('Github',
-             'https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}',
-             True),
-        ],
-    }
+# Removes permalink markers
+html_add_permalinks = ''
 
-# Custom sidebars
-html_sidebars = {'index': ['status.html']}
+# Theme options.
+html_theme_options = {
+    'keywords': '',
+    'author_name': ','.join(authors),
+    'author_url': '{{ cookiecutter.developer_url }}',
+    'twitter_id': '@{{ cookiecutter.github_username }}',
+    'publish_date': datetime.datetime.now().date(),
+    'scm_name': 'Github',
+    'scm_url': 'https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}',
+    'ci_name': 'Travis',
+    'ci_url': 'https://travis-ci.org/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}',
+    'issues_name': 'Github',
+    'issues_url': 'https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/issues',
+    'supported_list': ['Python 2.6', 'Python 2.7', 'Python 3.2', 'Python 3.3',
+                       'Python 3.4', 'pypy', 'pypy3'],
+    'releases_repos': [
+        ('Pypi', 'https://pypi.python.org/pypi/{{ cookiecutter.repo_name }}')],
+    'general_info_links': [('Acquire', './acquire.html'),
+                           ('Usage', './usage.html')],
+    'navbar_links': [('Documentation', [('Acquire', './acquire.html'),
+                                        ('Usage', './usage.html')])],
+}
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = '%s doc' % project
