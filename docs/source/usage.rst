@@ -1,23 +1,27 @@
-#####
+=====
 Usage
-#####
+=====
 
-First of all, Cookiecutter must be installed on the computer:
+This project requires the use of `Cookiecutter`_, which can be installed with
+the help of pip:
 
 .. code-block:: sh
 
     $ pip install cookiecutter
 
-Then, the template can be acquired and used directly from Github:
+After that the template can be acquired and used directly from Github:
 
 .. code-block:: sh
 
     $ cookiecutter gh:bernardo-mg/cookiecutter-python-library
 
-It is only needed to download the template once. After that, it can be reused:
+As it is only required to download the template once it can be reused this way:
 
 .. code-block:: sh
 
     $ cookiecutter cookiecutter-python-library/
 
-After that, just follow the instructions.
+Once the command has been executed just follow the instructions which will
+appear on the screen, asking for some information to fill the project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter

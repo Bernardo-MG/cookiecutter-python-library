@@ -1,6 +1,6 @@
-##################
+==================
 Documentation site
-##################
+==================
 
 The 'doc' folder contains basic files to generate a Sphinx documentation site.
 Of course, Sphinx can be used to create other kinds of docs, but combined with

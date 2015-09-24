@@ -37,17 +37,6 @@ version = '0.1.0'
 # The full version, including alpha/beta/rc tags.
 release = version
 
-# Services information
-scm_name = 'Github'
-scm_url = 'https://github.com/Bernardo-MG/cookiecutter-python-library'
-ci_name = 'Travis'
-ci_url = 'https://travis-ci.org/Bernardo-MG/cookiecutter-python-library'
-
-# General information
-license_name = 'MIT'
-license_url = 'http://opensource.org/licenses/MIT'
-python_versions = '2.6, 2.7, 3.2, 3.3, 3.4, pypy, pypy3'
-
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 exclude_patterns = []
@@ -61,48 +50,45 @@ todo_include_todos = False
 
 # -- Options for HTML output ----------------------------------------------
 
-try:
-    import sphinx_bootstrap_theme
-except:
-    from warnings import warn
+import sphinx_docs_theme
 
-    warn("I would like to use the sphinx bootstrap theme, but can't find it.\n"
-         "'pip install sphinx_bootstrap_theme' to fix.")
-else:
-    # Activate the theme.
-    html_theme = 'bootstrap'
-    html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
+# Activate the theme.
+html_theme = 'sphinx_docs_theme'
+html_theme_path = sphinx_docs_theme.get_html_theme_path()
 
-    # Theme options.
-    html_theme_options = {
-        'navbar_fixed_top': 'true',
-        'navbar_site_name': 'Contents',
-        'bootstrap_version': '3',
-        'source_link_position': 'footer',
-        'bootswatch_theme': 'yeti',
-        'navbar_links': [
-            (scm_name,
-             scm_url,
-             True),
-        ],
-    }
+# Removes permalink markers
+html_add_permalinks = False
 
-# Custom sidebars
-html_sidebars = {'index': ['about_code.html']}
+# Theme options.
+html_theme_options = {
+    'keywords': 'Sphinx, theme, Bootstrap, documentation',
+    'author_name': ','.join(authors),
+    'author_url': 'https://github.com/Bernardo-MG',
+    'twitter_id': '@wandrell',
+    'publish_date': datetime.datetime.now().date(),
+    'scm_name': 'Github',
+    'scm_url': 'https://github.com/Bernardo-MG/cookiecutter-python-library',
+    'ci_name': 'Travis',
+    'ci_url': 'https://travis-ci.org/Bernardo-MG/cookiecutter-python-library',
+    'issues_name': 'Github',
+    'issues_url': 'https://github.com/Bernardo-MG/cookiecutter-python-library/issues',
+    'supported_list': ['Python 2.6', 'Python 2.7', 'Python 3.2', 'Python 3.3',
+                       'Python 3.4', 'pypy', 'pypy3'],
+    'releases_repos': [],
+    'general_info_links': [('Acquire', './acquire.html'),
+                           ('Usage', './usage.html')],
+    'navbar_links': [('Documentation', [('Acquire', './acquire.html'),
+                                        ('Usage', './usage.html'),
+                                        ('Tests',
+                                         './tests.html'),
+                                        ('Makefile',
+                                         './makefile.html'),
+                                        ('Doc site',
+                                         './doc_site.html')])],
+}
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = '%s doc' % project
-
-# HTML context
-html_context = {
-    'scm_name': scm_name,
-    'scm_url': scm_url,
-    'ci_name': ci_name,
-    'ci_url': ci_url,
-    'license_name': license_name,
-    'license_url': license_url,
-    'python_versions': python_versions,
-}
 
 # -- Options for LaTeX output ---------------------------------------------
 

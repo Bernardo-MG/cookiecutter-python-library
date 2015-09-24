@@ -1,6 +1,6 @@
-############
+============
 The makefile
-############
+============
 
 A makefile, and an equivalent make.bat file for windows, is offered as an easy
 way to control the project's flow.
