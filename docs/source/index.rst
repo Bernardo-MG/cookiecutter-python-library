@@ -20,5 +20,15 @@ Features
 - Prepared to run coverage tests and integrate with `Coveralls`_
 - Prepared to run tests for the `Sphinx`_ documentation
 
+.. toctree::
+   :hidden:
+
+   acquire
+   usage
+   docs_site
+   makefile
+   tests
+
+
 .. _Coveralls: https://coveralls.io
 .. _Sphinx: http://sphinx-doc.org/
