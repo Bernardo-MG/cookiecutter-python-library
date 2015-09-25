@@ -14,15 +14,15 @@ the `Cookiecutter Python Library
 this will set up the initial project according to a few pieces of data it will
 ask for.
 
-.. image:: https://badge.fury.io/py/{{ cookiecutter.distribution_name }}.svg
-    :target: https://pypi.python.org/pypi/{{ cookiecutter.distribution_name }}
+.. image:: https://badge.fury.io/py/{{ cookiecutter.package_name }}.svg
+    :target: https://pypi.python.org/pypi/{{ cookiecutter.package_name }}
     :alt: {{ cookiecutter.project_name }} Pypi package page
 
-.. image:: https://readthedocs.org/projects/{{ cookiecutter.distribution_name }}/badge/?version=latest
-    :target: http://{{ cookiecutter.distribution_name }}.readthedocs.org/en/latest/
+.. image:: https://readthedocs.org/projects/{{ cookiecutter.package_name }}/badge/?version=latest
+    :target: http://{{ cookiecutter.package_name }}.readthedocs.org/en/latest/
     :alt: {{ cookiecutter.project_name }} latest documentation Status
-.. image:: https://readthedocs.org/projects/{{ cookiecutter.distribution_name }}/badge/?version=develop
-    :target: http://{{ cookiecutter.distribution_name }}.readthedocs.org/en/develop/
+.. image:: https://readthedocs.org/projects/{{ cookiecutter.package_name }}/badge/?version=develop
+    :target: http://{{ cookiecutter.package_name }}.readthedocs.org/en/develop/
     :alt: {{ cookiecutter.project_name }} development documentation Status
 
 Features
@@ -74,7 +74,7 @@ Installing
 The project is offered as a `Pypi package`_, and using pip is the preferred way
 to install it. For this use the following command;
 
-``$ pip install {{ cookiecutter.distribution_name }}``
+``$ pip install {{ cookiecutter.package_name }}``
 
 If manual installation is required, the project includes a setup.py file, along
 a makefile allowing direct installation of the library, which can be done with
@@ -114,9 +114,9 @@ License
 
 The project has been released under the `MIT License`_.
 
-.. _GitHub project page: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}
-.. _latest docs: http://{{ cookiecutter.distribution_name }}.readthedocs.org/en/latest/
-.. _Pypi package: https://pypi.python.org/pypi/{{ cookiecutter.distribution_name }}
+.. _GitHub project page: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.package_name }}
+.. _latest docs: http://{{ cookiecutter.package_name }}.readthedocs.org/en/latest/
+.. _Pypi package: https://pypi.python.org/pypi/{{ cookiecutter.package_name }}
 .. _MIT License: http://www.opensource.org/licenses/mit-license.php
-.. _project issues tracker: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/issues
+.. _project issues tracker: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.package_name }}/issues
 .. _Sphinx: http://sphinx-doc.org/

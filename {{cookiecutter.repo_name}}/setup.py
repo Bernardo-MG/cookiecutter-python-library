@@ -55,7 +55,7 @@ class _ToxTester(test_command):
 
 
 setup(
-    name='{{ cookiecutter.distribution_name }}',
+    name='{{ cookiecutter.package_name }}',
     packages=find_packages(),
     include_package_data=True,
     package_data={
@@ -65,8 +65,8 @@ setup(
     author={{'{0!r}'.format(cookiecutter.developer_name).lstrip('ub')}},
     author_email={{'{0!r}'.format(cookiecutter.developer_email).lstrip('ub')}},
     license='MIT',
-    url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}',
-    download_url='https://pypi.python.org/pypi/{{ cookiecutter.distribution_name }}',
+    url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.package_name }}',
+    download_url='https://pypi.python.org/pypi/{{ cookiecutter.package_name }}',
     keywords=[],
     platforms='any',
     classifiers=[

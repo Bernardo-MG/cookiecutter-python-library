@@ -5,9 +5,9 @@ include tox.ini
 include requirements.txt
 
 # Template
-recursive-include {{cookiecutter.repo_name}} *
-recursive-exclude {{cookiecutter.repo_name}} *.pyc
-recursive-exclude {{cookiecutter.repo_name}} *.pyo
+recursive-include {{cookiecutter.package_name}} *
+recursive-exclude {{cookiecutter.package_name}} *.pyc
+recursive-exclude {{cookiecutter.package_name}} *.pyo
 
 # Documentation
 recursive-include docs *
