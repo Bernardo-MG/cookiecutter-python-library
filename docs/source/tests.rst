@@ -66,6 +66,17 @@ Tests outside of Tox
 For technical reasons, not all tests could be added to Tox. These are still run
 by Travis, but otherwise they have to be run manually.
 
+~~~~~~~~
+Coverage
+~~~~~~~~
+
+Projects generated with the template come ready to send coverage reports to
+`Coveralls`_. This is done with the 'run_coverage_tests.sh' script and the
+'.coveragerc' configuration file.
+
+As long as the tests are run through Travis no additional configuration is
+required, apart from registering the project on Coveralls.
+
 --------------------------------------
 Adding tests for other implementations
 --------------------------------------
@@ -84,3 +95,5 @@ To run tests with the Jython implementation use the '.scripts/test_jython.sh' sc
 These tests will be run with the use of pytest.
 
 Jython is installed using Pyenv.
+
+.. _Coveralls: https://coveralls.io
