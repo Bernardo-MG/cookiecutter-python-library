@@ -18,3 +18,4 @@ Features
 
    acquire
    usage
+   reports
