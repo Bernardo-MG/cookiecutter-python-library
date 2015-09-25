@@ -11,13 +11,17 @@ env:
   - PYTHON_VERSION=$TRAVIS_PYTHON_VERSION TEST_DOCS=false JYTHON=false COVERAGE=false DEPLOY_DOCS=false
 matrix:
   include:
+    # Tests and deploys docs
     - python: "2.7"
       env:
         - PYTHON_VERSION=$TRAVIS_PYTHON_VERSION TEST_DOCS=true JYTHON=false COVERAGE=false DEPLOY_DOCS=true PULL_REQUEST=$TRAVIS_PULL_REQUEST SCM_BRANCH=$TRAVIS_BRANCH
+    # Tests docs
     - python: "3.4"
       env: PYTHON_VERSION=$TRAVIS_PYTHON_VERSION TEST_DOCS=true JYTHON=false COVERAGE=false DEPLOY_DOCS=false
+    # Runs coverage report
     - python: "2.7"
       env: PYTHON_VERSION=$TRAVIS_PYTHON_VERSION TEST_DOCS=false JYTHON=false COVERAGE=true DEPLOY_DOCS=false
+    # Runs Jython tests
     - python: "2.7"
       env: PYTHON_VERSION=$TRAVIS_PYTHON_VERSION TEST_DOCS=false JYTHON=true COVERAGE=false DEPLOY_DOCS=false
 
