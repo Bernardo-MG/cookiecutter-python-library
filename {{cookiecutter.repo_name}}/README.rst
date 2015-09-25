@@ -9,10 +9,8 @@ ready to be used for creating a new Python library.
 Just check the readme and docs, to adapt them to your project, and it is done.
 
 Remember that if you want to create a new project it is better just reusing
-the `Cookiecutter Python Library
-<https://github.com/Bernardo-MG/cookiecutter-python-library>`_ template, as
-this will set up the initial project according to a few pieces of data it will
-ask for.
+the Cookiecutter Python Library template, as this will set up the initial
+project according to a few pieces of data it will ask for.
 
 .. image:: https://badge.fury.io/py/{{ cookiecutter.package_name }}.svg
     :target: https://pypi.python.org/pypi/{{ cookiecutter.package_name }}
