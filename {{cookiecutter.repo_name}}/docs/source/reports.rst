@@ -1,0 +1,26 @@
+=======
+Reports
+=======
+
+-----
+Tests
+-----
+
+============ ===
+Report       Description
+============ ===
+`Coveralls`_ Coverage report
+============ ===
+
+------------
+Code Quality
+------------
+
+============ ===
+Report       Description
+============ ===
+`Landscape`_ Coverage report
+============ ===
+
+.. _Coveralls: https://coveralls.io/github/{{ cookiecutter.github_username }}/{{ cookiecutter.package_name }}
+.. _Landscape: https://https://landscape.io/github/{{ cookiecutter.github_username }}/{{ cookiecutter.package_name }}/master
