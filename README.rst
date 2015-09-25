@@ -30,6 +30,12 @@ Projects created with this template come with the following features:
 - Prepared to run coverage tests and integrate with `Coveralls`_
 - Prepared to run tests for the `Sphinx`_ documentation
 
+Demo
+----
+
+An example of what can be created with this template is found at the
+`cookiecutter-python-library-demo`_.
+
 Documentation
 -------------
 
@@ -109,3 +115,4 @@ The project has been released under the `MIT License`_.
 .. _MIT License: http://www.opensource.org/licenses/mit-license.php
 .. _Sphinx: http://sphinx-doc.org/
 .. _Sphinx Docs Theme: https://github.com/Bernardo-MG/sphinx-docs-theme
+.. _cookiecutter-python-library-demo: https://github.com/Bernardo-MG/cookiecutter-python-library-demo
