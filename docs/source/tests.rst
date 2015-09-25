@@ -31,10 +31,9 @@ Coverage
     $ tox -e coverage
 
 The coverage environment runs the tests and then generates the coverage 
-report. This will be set to `Coveralls <https://coveralls.io/>`_.
-Luckily it is easy to integrate with Travis, and when running this
-environment from there the report will be automatically sent with no
-additional complication.
+report. This will be set to `Coveralls`_. Luckily it is easy to integrate with
+Travis, and when running this environment from there the report will be
+automatically sent with no additional complication.
 
 ~~~~~~~~~~~~~~~~~~~
 Documentation check
@@ -58,24 +57,6 @@ Various style checks
 By default Travis won't run this environment, as it is too prone to failures.
 It will check the readme, the manifest and all the code, to check they conform
 style standards.
-
---------------------
-Tests outside of Tox
---------------------
-
-For technical reasons, not all tests could be added to Tox. These are still run
-by Travis, but otherwise they have to be run manually.
-
-~~~~~~~~
-Coverage
-~~~~~~~~
-
-Projects generated with the template come ready to send coverage reports to
-`Coveralls`_. This is done with the 'run_coverage_tests.sh' script and the
-'.coveragerc' configuration file.
-
-As long as the tests are run through Travis no additional configuration is
-required, apart from registering the project on Coveralls.
 
 --------------------------------------
 Adding tests for other implementations
