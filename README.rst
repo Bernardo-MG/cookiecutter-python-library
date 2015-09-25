@@ -2,7 +2,7 @@
 Cookiecutter Python Library
 ===========================
 
-Cookiecutter template for creating general-purpose Python libraries.
+`Cookiecutter`_ template for creating general-purpose Python libraries.
 
 While it mostly follows my personal tastes, it offers a series of good 
 practices which include deployment files, makefile, testing, and the use of 
