@@ -13,6 +13,7 @@ Features
 
 - Travis configuration file
 - Customized setup.py module to minimize configuration, and using tox for the tests
+- Docs using `Sphinx`_ and the `Sphinx Docs Theme`_
 - Prepared to run tests through tox
 - Prepared to run tests on Python 2.6, 2.7, 3.2, 3.3, 3.4
 - Prepared to run tests on pypy and pypy 3
@@ -32,3 +33,4 @@ Features
 
 .. _Coveralls: https://coveralls.io
 .. _Sphinx: http://sphinx-doc.org/
+.. _Sphinx Docs Theme: https://github.com/Bernardo-MG/sphinx-docs-theme

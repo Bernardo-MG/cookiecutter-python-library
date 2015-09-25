@@ -2,7 +2,17 @@
 {{ cookiecutter.project_name }}
 ===============================
 
-Describe the project here.
+This is a project created with the `Cookiecutter Python Library
+<https://github.com/Bernardo-MG/cookiecutter-python-library>`_ template and
+ready to be used for creating a new Python library.
+
+Just check the readme and docs, to adapt them to your project, and it is done.
+
+Remember that if you want to create a new project it is better just reusing
+the `Cookiecutter Python Library
+<https://github.com/Bernardo-MG/cookiecutter-python-library>`_ template, as
+this will set up the initial project according to a few pieces of data it will
+ask for.
 
 .. image:: https://badge.fury.io/py/{{ cookiecutter.distribution_name }}.svg
     :target: https://pypi.python.org/pypi/{{ cookiecutter.distribution_name }}
@@ -18,11 +28,17 @@ Describe the project here.
 Features
 --------
 
-A list of features
+By default the project comes with the following features:
 
-- A feature
-- Another feature
-- Yet another feature
+- Travis configuration file
+- Customized setup.py module to minimize configuration, and using tox for the tests
+- Docs using `Sphinx`_ and the `Sphinx Docs Theme <https://github.com/Bernardo-MG/sphinx-docs-theme>`_
+- Prepared to run tests through tox
+- Prepared to run tests on Python 2.6, 2.7, 3.2, 3.3, 3.4
+- Prepared to run tests on pypy and pypy 3
+- Prepared to run tests on Jython
+- Prepared to run coverage tests and integrate with `Coveralls <https://coveralls.io>`_
+- Prepared to run tests for the `Sphinx`_ documentation
 
 Documentation
 -------------

@@ -18,8 +18,11 @@ various free services, such as Github, Travis and Pypi.
 Features
 --------
 
+Projects created with this template come with the following features:
+
 - Travis configuration file
 - Customized setup.py module to minimize configuration, and using tox for the tests
+- Docs using `Sphinx`_ and the `Sphinx Docs Theme`_
 - Prepared to run tests through tox
 - Prepared to run tests on Python 2.6, 2.7, 3.2, 3.3, 3.4
 - Prepared to run tests on pypy and pypy 3
@@ -105,3 +108,4 @@ The project has been released under the `MIT License`_.
 .. _latest docs: http://cookiecutter-python-library.readthedocs.org/en/latest/
 .. _MIT License: http://www.opensource.org/licenses/mit-license.php
 .. _Sphinx: http://sphinx-doc.org/
+.. _Sphinx Docs Theme: https://github.com/Bernardo-MG/sphinx-docs-theme
