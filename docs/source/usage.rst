@@ -23,7 +23,7 @@ After that the template can be acquired and used directly from Github:
 
     $ cookiecutter gh:bernardo-mg/cookiecutter-python-library
 
-As it is only required to download the template once it can be reused this way:
+For reusing it there is no need to download the project again:
 
 .. code-block:: sh
 

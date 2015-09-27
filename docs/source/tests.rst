@@ -18,14 +18,14 @@ way to run said tests.
 tox environments
 ~~~~~~~~~~~~~~~~
 
-If using tox this way there will be a series of Python interpreters ready to
-be used, and all the tests will be run with each version, which include not
-only various Python 2 and 3 releases, but also Pypy.
+Travis offers several Python interpreters, which allow testing using different
+test environments. The interpreters it has include not only various Python 2 and
+3 releases, but also Pypy.
 
 It is also possible to run the tests for a concrete release manually, but in
-that case the correct Python interpreter should be installed locally.
+that case the correct Python interpreter should have been installed locally.
 
-Int that case the usual command can be used:
+For that the usual command can be used:
 
 .. code-block:: sh
 
@@ -46,10 +46,9 @@ This can be done through tox with the following command:
 
     $ tox -e coverage
 
-This will generate and send the coverage information required for the report.
-If the job is done with Travis, and the Travis configuration file included in
-the project is prepared to create the coverage report, no additional
-configuration is required.
+Which will generate and send the coverage information required for the report.
+If the job is done with Travis, something the included Travis configuration
+file already takes care of, no additional configuration is required.
 
 Otherwise check the Coveralls page to find instructions in how to set up the
 coverage process.
@@ -66,8 +65,7 @@ following command:
     $ tox -e docs
 
 This will run the Sphinx tests, and it is a good idea running it before
-deploying the docs, a thing which the included Travis configuration file
-already does.
+deploying the docs, like the included Travis configuration file does.
 
 ~~~~~~~~~~~~~~~~
 Style validation
