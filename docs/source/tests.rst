@@ -2,70 +2,107 @@
 Tests
 =====
 
+Projects created from the template come ready to run test suites, which include
+not only unit tests, but also documentation validation and coverage reports.
+
+
+ which are
+meant to be run with `tox`_.
+
+
 Tests are run through tox. Both the setup module and the Travis config file
 make use of it for this purpose.
 
 All of these tests are run with the help of nosetests.
 
-----------------
+---
+tox
+---
+
+The new project will come ready to run most of the test suites through `tox`_.
+This framework helps isolating and reproducing the test environment and is
+completely compatible with `Travis CI`_ service, which is the recommended
+way to run said tests.
+
+~~~~~~~~~~~~~~~~
 Tox environments
-----------------
+~~~~~~~~~~~~~~~~
 
-Several environments are configured for this. Most of them are just for the
-various interpreters, and need no additional description, but a few are
-special cases.
+If using tox this way there will be a series of Python interpreters ready to
+be used, and all the tests will be run with each version, which include not
+only various Python 2 and 3 releases, but also Pypy.
 
-In all of them, running the tests for a particular environment is done with
-the usual command:
+It is also possible to run the tests for a concrete release manually, but in
+that case the correct Python interpreter should be installed locally.
+
+Int that case the usual command can be used:
 
 .. code-block:: sh
 
     $ tox -e env_name
 
+Where 'env_name' is the Python version code, such as 'py27' for Python 2.7.
+
 ~~~~~~~~
 Coverage
 ~~~~~~~~
+
+The included '.coveragerc' file allows using `Coveralls`_ for generating
+coverage reports.
+
+This can be done through tox with the following command:
 
 .. code-block:: sh
 
     $ tox -e coverage
 
-The coverage environment runs the tests and then generates the coverage 
-report. This will be set to `Coveralls`_. Luckily it is easy to integrate with
-Travis, and when running this environment from there the report will be
-automatically sent with no additional complication.
+This will generate and send the coverage information required for the report.
+If the job is done with Travis, and the Travis configuration file included in
+the project is prepared to create the coverage report, no additional
+configuration is required.
 
-~~~~~~~~~~~~~~~~~~~
-Documentation check
-~~~~~~~~~~~~~~~~~~~
+Otherwise check the Coveralls page to find instructions in how to set up the
+coverage process.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+Documentation validation
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+It is possible to validate the project's documentation with tox and the
+following command:
 
 .. code-block:: sh
 
     $ tox -e docs
 
-This environment will validate the Sphinx tests. It is a good idea
-running it before deploying the docs.
+This will run the Sphinx tests, and it is a good idea running it before
+deploying the docs, a thing which the included Travis configuration file
+already does.
 
-~~~~~~~~~~~~~~~~~~~~
-Various style checks
-~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
+Style validation
+~~~~~~~~~~~~~~~~
+
+In a similar way to the documentation, the code's style can be validated. For
+this the following tox command can be used:
 
 .. code-block:: sh
 
     $ tox -e check
 
 By default Travis won't run this environment, as it is too prone to failures.
-It will check the readme, the manifest and all the code, to check they conform
-style standards.
+It will check the readme, the manifest and all the code, making sure they
+conform style standards.
 
---------------------------------------
-Adding tests for other implementations
---------------------------------------
+---------------------------------------------
+Adding tests for other Python implementations
+---------------------------------------------
 
-If for some reason tests are needed for other implementations of Python, apart
-from the ones offered by Travis, Pyenv can be used.
+The tests are meant to be run with the help of Travis. But this service does not
+offer all the existing Python implementations.
 
-And example of this is the Jython test script.
+If for some reason one of these needs to be added Pyenv can be used, and an
+example using Jython is included.
 
 ~~~~~~~~~~~~
 Jython tests
@@ -73,8 +110,9 @@ Jython tests
 
 To run tests with the Jython implementation use the '.scripts/test_jython.sh' script.
 
-These tests will be run with the use of pytest.
-
-Jython is installed using Pyenv.
+Jython is installed using Pyenv and the tests will be run with the help of
+pytests instead of tox.
 
 .. _Coveralls: https://coveralls.io
+.. _tox: https://testrun.org/tox/latest/
+.. _Travis CI: travis-ci.org

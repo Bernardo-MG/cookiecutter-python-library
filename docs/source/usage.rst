@@ -2,12 +2,20 @@
 Usage
 =====
 
+------------
+Requirements
+------------
+
 This project requires the use of `Cookiecutter`_, which can be installed with
 the help of pip:
 
 .. code-block:: sh
 
     $ pip install cookiecutter
+
+----------------------
+Creating a new project
+----------------------
 
 After that the template can be acquired and used directly from Github:
 
