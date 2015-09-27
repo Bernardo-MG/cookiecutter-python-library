@@ -5,16 +5,6 @@ Tests
 Projects created from the template come ready to run test suites, which include
 not only unit tests, but also documentation validation and coverage reports.
 
-
- which are
-meant to be run with `tox`_.
-
-
-Tests are run through tox. Both the setup module and the Travis config file
-make use of it for this purpose.
-
-All of these tests are run with the help of nosetests.
-
 ---
 tox
 ---
