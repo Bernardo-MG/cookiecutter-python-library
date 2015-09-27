@@ -15,7 +15,7 @@ completely compatible with `Travis CI`_ service, which is the recommended
 way to run said tests.
 
 ~~~~~~~~~~~~~~~~
-Tox environments
+tox environments
 ~~~~~~~~~~~~~~~~
 
 If using tox this way there will be a series of Python interpreters ready to
