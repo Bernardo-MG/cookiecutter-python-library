@@ -24,7 +24,7 @@ install:
   - pip install tox
 script:
   # Documentation tests are run
-  - ./.scripts/python/run_tests.sh $DO_TEST_DOCS docs
+  - ~/.scripts/python/run_tests.sh $DO_TEST_DOCS docs
 after_success:
   # Documentation deployment
   - ~/.scripts/rtd/deploy.sh $DO_DEPLOY_DOCS cookiecutter-python-library
