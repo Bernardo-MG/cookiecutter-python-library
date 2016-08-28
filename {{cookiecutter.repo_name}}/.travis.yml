@@ -1,3 +1,7 @@
+# Travis CI Configuration file
+# @link https://travis-ci.org/
+
+# Using Python for the project
 language: python
 python:
   - "2.6"
