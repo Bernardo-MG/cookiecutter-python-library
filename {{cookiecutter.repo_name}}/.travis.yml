@@ -6,24 +6,24 @@ language: python
 python:
   # Python 2.6 is obsolete
   #- "2.6"
-  # Python 2.7 is set to test and deploy the docs, and to run the coverage report, in the configuration matrix
+  # Python 2.7 is set to test the docs in the configuration matrix
   #- "2.7"
   # Python 3.2 is obsolete
   #- "3.2"
   - "3.3"
-  # Python 3.4 is set to test the docs in the configuration matrix
-  #- "3.4"
-  - "3.5"
+  - "3.4"
+  # Python 2.7 is set to test and deploy the docs, and to run the coverage report, in the configuration matrix
+  #- "3.5"
   - "pypy"
   - "pypy3"
 matrix:
   include:
-    # Tests and deploys docs, also runs coverage report
-    - python: "2.7"
-      env: COVERAGE=true TEST_DOCS=true DEPLOY_DOCS=true
     # Tests docs
-    - python: "3.4"
+    - python: "2.7"
       env: TEST_DOCS=true
+    # Tests and deploys docs, also runs coverage report
+    - python: "3.5"
+      env: COVERAGE=true TEST_DOCS=true DEPLOY_DOCS=true
 
 before_install:
   # Gets scripts
