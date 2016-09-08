@@ -27,7 +27,7 @@ master_doc = 'index'
 # General information about the project.
 project = 'Cookiecutter Python Library'
 project_safe = project.replace(' ', '_')
-copyright = u'%s, Bernardo Martínez Garrido' % datetime.datetime.now().year
+copyright = u'2015-%s, Bernardo Martínez Garrido' % datetime.datetime.now().year
 authors = [u'Bernardo Martínez Garrido']
 
 # The version info for the project.
@@ -64,16 +64,15 @@ html_theme_options = {
     'keywords': 'Sphinx, theme, Bootstrap, documentation',
     'author_name': ','.join(authors),
     'author_url': 'https://github.com/Bernardo-MG',
-    'twitter_id': '@wandrell',
+    'twitter_id': '@Wandrell_BMG',
     'publish_date': datetime.datetime.now().date(),
+    'years': '2015-%s' % datetime.datetime.now().year,
     'scm_name': 'Github',
     'scm_url': 'https://github.com/Bernardo-MG/cookiecutter-python-library',
     'ci_name': 'Travis',
     'ci_url': 'https://travis-ci.org/Bernardo-MG/cookiecutter-python-library',
     'issues_name': 'Github',
     'issues_url': 'https://github.com/Bernardo-MG/cookiecutter-python-library/issues',
-    'supported_list': ['Python 2.6', 'Python 2.7', 'Python 3.2', 'Python 3.3',
-                       'Python 3.4', 'pypy', 'pypy3'],
     'releases_repos': [],
     'general_info_links': [('Acquire', './acquire.html'),
                            ('Usage', './usage.html')],
