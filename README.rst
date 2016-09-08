@@ -24,9 +24,8 @@ Projects created with this template come with the following features:
 - Customized setup.py module to minimize configuration, and using tox for the tests
 - Docs using `Sphinx`_ and the `Sphinx Docs Theme`_
 - Prepared to run tests through tox
-- Prepared to run tests on Python 2.6, 2.7, 3.2, 3.3, 3.4
+- Prepared to run tests on Python 2 and 3
 - Prepared to run tests on pypy and pypy 3
-- Prepared to run tests on Jython
 - Prepared to run coverage tests and integrate with `Coveralls`_
 - Prepared to run tests for the `Sphinx`_ documentation
 
@@ -39,7 +38,11 @@ An example of what can be created with this template is found at the
 Documentation
 -------------
 
-Check the `latest docs`_ for the most current version of the documentation.
+Documentation sources are included with the project, and used to generate the
+documentation sites:
+
+- The `latest docs`_ are always generated for the latest release, kept in the 'master' branch
+- The `development docs`_ are generated from the latest code in the 'develop' branch
 
 You can also create the documentation from the source files, kept in the 'docs'
 folder, with the help of Sphinx. For this use the makefile, or the make.bat
@@ -48,8 +51,8 @@ file, contained on that folder.
 Usage
 -----
 
-The template has been prepared for `Cookiecutter`_, and consists of Python
-code and Jinja2 labels.
+While the project consists of Python code and Jinja2 templates it is prepared
+to be used through `Cookiecutter`_.
 
 Prerequisites
 ~~~~~~~~~~~~~
@@ -112,6 +115,7 @@ The project has been released under the `MIT License`_.
 .. _GitHub project page: https://github.com/Bernardo-MG/cookiecutter-python-library
 .. _project issues tracker: https://github.com/Bernardo-MG/cookiecutter-python-library/issues
 .. _latest docs: http://cookiecutter-python-library.readthedocs.org/en/latest/
+.. _development docs: http://cookiecutter-python-library.readthedocs.org/en/develop/
 .. _MIT License: http://www.opensource.org/licenses/mit-license.php
 .. _Sphinx: http://sphinx-doc.org/
 .. _Sphinx Docs Theme: https://github.com/Bernardo-MG/sphinx-docs-theme
