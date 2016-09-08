@@ -3,5 +3,5 @@ setuptools==26.1.1
 twine==1.8.1
 
 # Documentation
-sphinx-docs-theme==0.1.2
+sphinx-docs-theme==0.2.0
 Pygments==2.1.3
