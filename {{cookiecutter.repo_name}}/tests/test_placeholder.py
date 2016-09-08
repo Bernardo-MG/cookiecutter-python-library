@@ -12,7 +12,6 @@ The following cases are tested:
 
 __author__ = '{{ cookiecutter.developer_name }}'
 __license__ = 'MIT'
-__status__ = 'Development'
 
 
 class TestPlaceholder(unittest.TestCase):
