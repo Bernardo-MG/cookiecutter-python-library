@@ -41,7 +41,7 @@ script:
   - ~/.scripts/python/run_tests.sh true $PYTHON_VERSION_TEST
   # Documentation tests are run
   - ~/.scripts/python/run_tests.sh $DO_TEST_DOCS docs
-  # Documentation tests are run
+  # Tests coverage is run
   - ~/.scripts/python/run_tests.sh $DO_COVERAGE coverage
 after_success:
   # Documentation deployment
