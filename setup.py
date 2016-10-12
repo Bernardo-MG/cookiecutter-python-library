@@ -48,7 +48,7 @@ setup(
     include_package_data=True,
     package_data={
     },
-    version='0.1.1',
+    version='0.1.2',
     description='Cookiecutter template for Python libraries.',
     author='Bernardo Martínez Garrido',
     author_email='programming@wandrell.com',
@@ -73,7 +73,7 @@ setup(
     install_requires=[
         'cookiecutter',
         'setuptools',
-        'sphinx_bootstrap_theme',
+        'sphinx_docs_theme',
     ],
     tests_require=_tests_require,
     extras_require={'test': _tests_require},

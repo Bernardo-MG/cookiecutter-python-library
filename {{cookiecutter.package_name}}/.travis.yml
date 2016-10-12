@@ -37,11 +37,13 @@ install:
   # tox is required for the tests
   - pip install tox
 script:
+  # Code is checked
+  - ~/.scripts/python/run_tests.sh true check
   # Tests are run
   - ~/.scripts/python/run_tests.sh true $PYTHON_VERSION_TEST
   # Documentation tests are run
   - ~/.scripts/python/run_tests.sh $DO_TEST_DOCS docs
-  # Documentation tests are run
+  # Tests coverage is run
   - ~/.scripts/python/run_tests.sh $DO_COVERAGE coverage
 after_success:
   # Documentation deployment

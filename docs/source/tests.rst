@@ -82,25 +82,6 @@ By default Travis won't run this environment, as it is too prone to failures.
 It will check the readme, the manifest and all the code, making sure they
 conform style standards.
 
----------------------------------------------
-Adding tests for other Python implementations
----------------------------------------------
-
-The tests are meant to be run with the help of Travis. But this service does not
-offer all the existing Python implementations.
-
-If for some reason one of these needs to be added Pyenv can be used, and an
-example using Jython is included.
-
-~~~~~~~~~~~~
-Jython tests
-~~~~~~~~~~~~
-
-To run tests with the Jython implementation use the '.scripts/test_jython.sh' script.
-
-Jython is installed using Pyenv and the tests will be run with the help of
-pytests instead of tox.
-
 .. _Coveralls: https://coveralls.io
-.. _tox: https://testrun.org/tox/latest/
+.. _tox: https://tox.readthedocs.io/en/latest/
 .. _Travis CI: travis-ci.org

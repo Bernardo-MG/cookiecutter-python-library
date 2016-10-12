@@ -4,10 +4,6 @@ import unittest
 
 """
 Placeholder tests.
-
-The following cases are tested:
-
-- A placeholder test that is always true passes
 """
 
 __author__ = '{{ cookiecutter.developer_name }}'
