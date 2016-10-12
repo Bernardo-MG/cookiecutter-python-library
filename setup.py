@@ -73,7 +73,7 @@ setup(
     install_requires=[
         'cookiecutter',
         'setuptools',
-        'sphinx_bootstrap_theme',
+        'sphinx_docs_theme',
     ],
     tests_require=_tests_require,
     extras_require={'test': _tests_require},
