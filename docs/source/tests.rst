@@ -83,5 +83,5 @@ It will check the readme, the manifest and all the code, making sure they
 conform style standards.
 
 .. _Coveralls: https://coveralls.io
-.. _tox: https://testrun.org/tox/latest/
+.. _tox: https://tox.readthedocs.io/en/latest/
 .. _Travis CI: travis-ci.org
