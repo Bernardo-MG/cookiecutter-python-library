@@ -84,7 +84,7 @@ the following command:
 Usage
 -----
 
-The application has been coded in Python, without using any particular
+The application has been coded in Python, and does not require any particular
 framework.
 
 Collaborate
