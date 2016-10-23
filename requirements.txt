@@ -6,5 +6,5 @@ twine==1.8.1
 cookiecutter==1.4.0
 
 # Documentation
-sphinx-docs-theme==0.2.0
+sphinx-docs-theme==0.2.3
 Pygments==2.1.3
