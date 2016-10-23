@@ -17,10 +17,10 @@ project according to a few pieces of data it will ask for.
     :alt: {{ cookiecutter.project_name }} Pypi package page
 
 .. image:: https://readthedocs.org/projects/{{ cookiecutter.package_name }}/badge/?version=latest
-    :target: http://{{ cookiecutter.package_name }}.readthedocs.org/en/latest/
+    :target: http://{{ cookiecutter.docs_release_url }}/{{ cookiecutter.package_name }}
     :alt: {{ cookiecutter.project_name }} latest documentation Status
 .. image:: https://readthedocs.org/projects/{{ cookiecutter.package_name }}/badge/?version=develop
-    :target: http://{{ cookiecutter.package_name }}.readthedocs.org/en/develop/
+    :target: http://{{ cookiecutter.docs_development_url }}/{{ cookiecutter.package_name }}
     :alt: {{ cookiecutter.project_name }} development documentation Status
 
 Features
@@ -114,8 +114,8 @@ License
 The project has been released under the `MIT License`_.
 
 .. _GitHub project page: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.package_name }}
-.. _latest docs: http://{{ cookiecutter.package_name }}.readthedocs.org/en/latest/
-.. _development docs: http://{{ cookiecutter.package_name }}.readthedocs.org/en/develop/
+.. _latest docs: http://{{ cookiecutter.docs_release_url }}/{{ cookiecutter.package_name }}
+.. _development docs: http://{{ cookiecutter.docs_development_url }}/{{ cookiecutter.package_name }}
 .. _Pypi package: https://pypi.python.org/pypi/{{ cookiecutter.package_name }}
 .. _MIT License: http://www.opensource.org/licenses/mit-license.php
 .. _project issues tracker: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.package_name }}/issues

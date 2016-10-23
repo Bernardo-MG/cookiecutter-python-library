@@ -8,12 +8,12 @@ While it mostly follows my personal tastes, it offers a series of good
 practices which include deployment files, makefile, testing, and the use of 
 various free services, such as Github, Travis and Pypi.
 
-.. image:: https://readthedocs.org/projects/cookiecutter-python-library/badge/?version=latest
-    :target: http://cookiecutter-python-library.readthedocs.org/en/latest/
-    :alt: Cookiecutter Python Library latest documentation Status
-.. image:: https://readthedocs.org/projects/cookiecutter-python-library/badge/?version=develop
-    :target: http://cookiecutter-python-library.readthedocs.org/en/develop/
-    :alt: Cookiecutter Python Library development documentation Status
+.. image:: https://img.shields.io/badge/docs-release-blue.svg
+    :target: http://docs.wandrell.com/cookiecutter-python-library
+    :alt: Cookiecutter Python Library latest documentation
+.. image:: https://img.shields.io/badge/docs-develop-blue.svg
+    :target: http://docs.wandrell.com/development/cookiecutter-python-library
+    :alt: Cookiecutter Python Library development documentation
 
 Features
 --------
@@ -114,8 +114,8 @@ The project has been released under the `MIT License`_.
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
 .. _GitHub project page: https://github.com/Bernardo-MG/cookiecutter-python-library
 .. _project issues tracker: https://github.com/Bernardo-MG/cookiecutter-python-library/issues
-.. _latest docs: http://cookiecutter-python-library.readthedocs.org/en/latest/
-.. _development docs: http://cookiecutter-python-library.readthedocs.org/en/develop/
+.. _latest docs: http://docs.wandrell.com/cookiecutter-python-library
+.. _development docs: http://docs.wandrell.com/development/cookiecutter-python-library
 .. _MIT License: http://www.opensource.org/licenses/mit-license.php
 .. _Sphinx: http://sphinx-doc.org/
 .. _Sphinx Docs Theme: https://github.com/Bernardo-MG/sphinx-docs-theme
