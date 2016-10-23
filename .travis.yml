@@ -11,6 +11,10 @@ matrix:
   include:
     - python: "2.7"
       env: TEST_DOCS=true DEPLOY_DOCS=true
+addons:
+  apt:
+    packages:
+    - sshpass
 
 before_install:
   # Gets scripts
