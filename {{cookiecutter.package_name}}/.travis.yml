@@ -24,6 +24,10 @@ matrix:
     # Tests and deploys docs, also runs coverage report
     - python: "3.5"
       env: COVERAGE=true TEST_DOCS=true DEPLOY_DOCS=true
+addons:
+  apt:
+    packages:
+    - sshpass
 
 before_install:
   # Gets scripts
@@ -43,8 +47,11 @@ script:
   - ~/.scripts/python/run_tests.sh true $PYTHON_VERSION_TEST
   # Documentation tests are run
   - ~/.scripts/python/run_tests.sh $DO_TEST_DOCS docs
-  # Tests coverage is run
+  # Documentation tests are run
   - ~/.scripts/python/run_tests.sh $DO_COVERAGE coverage
 after_success:
   # Documentation deployment
-  - ~/.scripts/rtd/deploy.sh $DO_DEPLOY_DOCS {{cookiecutter.package_name}}
+  - ~/.scripts/sphinx/build-html.sh $DO_DEPLOY_DOCS docs
+  - cd ~/sphinx/build/html
+  - ~/.scripts/deploy/deploy-ssh.sh $DO_DEPLOY_DOCS_RELEASE $DEPLOY_USERNAME $DEPLOY_PASSWORD $DEPLOY_HOST $DEPLOY_PORT $DEPLOY_PATH_RELEASE
+  - ~/.scripts/deploy/deploy-ssh.sh $DO_DEPLOY_DOCS_DEVELOP $DEPLOY_USERNAME $DEPLOY_PASSWORD $DEPLOY_HOST $DEPLOY_PORT $DEPLOY_PATH_DEVELOP
