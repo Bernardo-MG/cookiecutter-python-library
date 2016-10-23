@@ -26,6 +26,10 @@ before_install:
 install:
   # tox is required for the tests
   - pip install tox
+  # sphinx is required for the docs
+  - pip install sphinx
+  # Dependencies
+  - pip install --upgrade -r requirements.txt
 script:
   # Documentation tests are run
   - ~/.scripts/python/run_tests.sh $DO_TEST_DOCS docs
