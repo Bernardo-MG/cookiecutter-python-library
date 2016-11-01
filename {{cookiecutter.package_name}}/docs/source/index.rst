@@ -19,4 +19,4 @@ Features
    acquire
    usage
    reports
-   docs/dice
+   code/index
