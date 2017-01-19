@@ -17,10 +17,10 @@ project according to a few pieces of data it will ask for.
     :alt: {{ cookiecutter.project_name }} Pypi package page
 
 .. image:: https://readthedocs.org/projects/{{ cookiecutter.package_name }}/badge/?version=latest
-    :target: http://{{ cookiecutter.package_name }}.readthedocs.org/en/latest/
+    :target: http://{{ cookiecutter.docs_release_url }}/{{ cookiecutter.package_name }}
     :alt: {{ cookiecutter.project_name }} latest documentation Status
 .. image:: https://readthedocs.org/projects/{{ cookiecutter.package_name }}/badge/?version=develop
-    :target: http://{{ cookiecutter.package_name }}.readthedocs.org/en/develop/
+    :target: http://{{ cookiecutter.docs_development_url }}/{{ cookiecutter.package_name }}
     :alt: {{ cookiecutter.project_name }} development documentation Status
 
 Features
@@ -47,7 +47,7 @@ documentation sites:
 - The `development docs`_ are generated from the latest code in the 'develop' branch
 
 You can also create the documentation from the source files, kept in the 'docs'
-folder, with the help of Sphinx. For this use the makefile, or the make.bat
+folder, with the help of `Sphinx`_. For this use the makefile, or the make.bat
 file, contained on that folder.
 
 Prerequisites
@@ -84,7 +84,7 @@ the following command:
 Usage
 -----
 
-The application has been coded in Python, without using any particular
+The application has been coded in Python, and does not require any particular
 framework.
 
 Collaborate
@@ -114,8 +114,8 @@ License
 The project has been released under the `MIT License`_.
 
 .. _GitHub project page: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.package_name }}
-.. _latest docs: http://{{ cookiecutter.package_name }}.readthedocs.org/en/latest/
-.. _development docs: http://{{ cookiecutter.package_name }}.readthedocs.org/en/develop/
+.. _latest docs: http://{{ cookiecutter.docs_release_url }}/{{ cookiecutter.package_name }}
+.. _development docs: http://{{ cookiecutter.docs_development_url }}/{{ cookiecutter.package_name }}
 .. _Pypi package: https://pypi.python.org/pypi/{{ cookiecutter.package_name }}
 .. _MIT License: http://www.opensource.org/licenses/mit-license.php
 .. _project issues tracker: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.package_name }}/issues

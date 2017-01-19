@@ -23,4 +23,4 @@ Report       Description
 ============ ===
 
 .. _Coveralls: https://coveralls.io/github/{{ cookiecutter.github_username }}/{{ cookiecutter.package_name }}
-.. _Landscape: https://landscape.io/github/{{ cookiecutter.github_username }}/{{ cookiecutter.package_name }}/master
+.. _Landscape: https://landscape.io/github/{{ cookiecutter.github_username }}/{{ cookiecutter.package_name }}
