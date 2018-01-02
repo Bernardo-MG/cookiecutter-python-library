@@ -1,6 +1,6 @@
 {
     "developer_name": "Bernardo Martínez Garrido",
-    "developer_email": "programming@wandrell.com",
+    "developer_email": "programming@bernardomg.com",
     "developer_url": "https://github.com/Bernardo-MG",
     "github_username": "Bernardo-MG",
     "project_name": "Python Library",
@@ -8,6 +8,6 @@
     "project_short_description": "A library for Python",
     "year": "2016",
     "version": "0.1.2",
-    "docs_release_url": "docs.wandrell.com",
-    "docs_development_url": "docs.wandrell.com/development"
+    "docs_release_url": "docs.bernardomg.com",
+    "docs_development_url": "docs.bernardomg.com/development"
 }

@@ -27,13 +27,13 @@ master_doc = 'index'
 # General information about the project.
 project = 'Cookiecutter Python Library'
 project_safe = project.replace(' ', '_')
-copyright = u'2015-%s, Bernardo Martínez Garrido' % datetime.datetime.now().year
+copyright = u'2016-%s, Bernardo Martínez Garrido' % datetime.datetime.now().year
 authors = [u'Bernardo Martínez Garrido']
 
 # The version info for the project.
 #
 # The short X.Y version.
-version = '0.1.0'
+version = '0.1.5'
 # The full version, including alpha/beta/rc tags.
 release = version
 
@@ -64,9 +64,9 @@ html_theme_options = {
     'keywords': 'Sphinx, theme, Bootstrap, documentation',
     'author_name': ','.join(authors),
     'author_url': 'https://github.com/Bernardo-MG',
-    'twitter_id': '@Wandrell_BMG',
+    'twitter_id': '@BernardoMartG',
     'publish_date': datetime.datetime.now().date(),
-    'years': '2015-%s' % datetime.datetime.now().year,
+    'years': '2016-%s' % datetime.datetime.now().year,
     'scm_name': 'Github',
     'scm_url': 'https://github.com/Bernardo-MG/cookiecutter-python-library',
     'ci_name': 'Travis',
