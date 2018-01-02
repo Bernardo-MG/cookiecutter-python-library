@@ -51,7 +51,7 @@ setup(
     version='0.1.5',
     description='Cookiecutter template for Python libraries.',
     author='Bernardo Martínez Garrido',
-    author_email='programming@wandrell.com',
+    author_email='programming@bernardomg.com',
     license='MIT',
     url='https://github.com/Bernardo-MG/cookiecutter-python-library',
     download_url='https://github.com/Bernardo-MG/cookiecutter-python-library',
