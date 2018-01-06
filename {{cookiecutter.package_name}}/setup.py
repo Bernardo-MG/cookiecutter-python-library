@@ -35,6 +35,7 @@ def read(*names, **kwargs):
         encoding=kwargs.get('encoding', 'utf8')
     ).read()
 
+
 # Gets the version for the source folder __init__.py file
 with open(_source_package + '/__init__.py', 'rb',
           encoding='utf-8') as f:
