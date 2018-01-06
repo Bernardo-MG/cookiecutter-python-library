@@ -68,7 +68,7 @@ setup(
     include_package_data=True,
     package_data={
     },
-    version='0.1.5',
+    version='0.1.6',
     description='Cookiecutter template for Python libraries.',
     author='Bernardo Martínez Garrido',
     author_email='programming@bernardomg.com',
