@@ -33,7 +33,13 @@ class _ToxTester(test_command):
 
     Calls tox for running the tests.
     """
-    user_options = [('profile=', 'p', 'Test profile')]
+    user_options = [
+        ('test-module=', 'm', "Run 'test_suite' in specified module"),
+        ('test-suite=', 's',
+         "Run single test, case or suite (e.g. 'module.test_suite')"),
+        ('test-runner=', 'r', "Test runner to use"),
+        ('profile=', 'p', 'Test profile to use')
+    ]
 
     def initialize_options(self):
         test_command.initialize_options(self)
