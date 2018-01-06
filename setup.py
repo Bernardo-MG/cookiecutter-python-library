@@ -27,12 +27,26 @@ def read(*names, **kwargs):
     ).read()
 
 
-# For running tox tests
 class _ToxTester(test_command):
+    """
+    Tox test command.
+
+    Calls tox for running the tests.
+    """
+    user_options = [('profile=', 'p', 'Test profile')]
+
+    def initialize_options(self):
+        test_command.initialize_options(self)
+        self.profile = None
+
     def finalize_options(self):
         test_command.finalize_options(self)
         self.test_args = []
-        self.test_suite = True
+
+        if self.profile is not None:
+            # Adds the profile argument
+            # For example: '-e=py36'
+            self.test_args.append('-e=' + self.profile)
 
     def run_tests(self):
         # import here, cause outside the eggs aren't loaded
@@ -71,9 +85,7 @@ setup(
     ],
     long_description=read('README.rst'),
     install_requires=[
-        'cookiecutter',
-        'setuptools',
-        'sphinx_docs_theme',
+        'cookiecutter'
     ],
     tests_require=_tests_require,
     extras_require={'test': _tests_require},

@@ -18,6 +18,9 @@ This is prepared for easing the generation of deployment files.
 
 __license__ = 'MIT'
 
+# Source package
+_source_package = '{{ cookiecutter.package_name }}'
+
 # Regular expression for the version
 _version_re = re.compile(r'__version__\s+=\s+(.*)')
 
@@ -33,7 +36,7 @@ def read(*names, **kwargs):
     ).read()
 
 # Gets the version for the source folder __init__.py file
-with open('{{ cookiecutter.package_name }}/__init__.py', 'rb',
+with open(_source_package + '/__init__.py', 'rb',
           encoding='utf-8') as f:
     version_lib = f.read()
     version_lib = _version_re.search(version_lib).group(1)
@@ -41,10 +44,25 @@ with open('{{ cookiecutter.package_name }}/__init__.py', 'rb',
 
 
 class _ToxTester(test_command):
+    """
+    Tox test command.
+
+    Calls tox for running the tests.
+    """
+    user_options = [('profile=', 'p', 'Test profile')]
+
+    def initialize_options(self):
+        test_command.initialize_options(self)
+        self.profile = None
+
     def finalize_options(self):
         test_command.finalize_options(self)
         self.test_args = []
-        self.test_suite = True
+
+        if self.profile is not None:
+            # Adds the profile argument
+            # For example: '-e=py36'
+            self.test_args.append('-e=' + self.profile)
 
     def run_tests(self):
         # import here, cause outside the eggs aren't loaded
@@ -83,9 +101,6 @@ setup(
     ],
     long_description=read('README.rst'),
     install_requires=[
-        'setuptools',
-        'sphinx_docs_theme',
-        'twine',
     ],
     tests_require=_tests_require,
     extras_require={'test': _tests_require},
