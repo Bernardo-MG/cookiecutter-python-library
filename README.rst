@@ -69,7 +69,7 @@ All other dependencies are indicated on the requirements.txt file.
 
 These can be installed with:
 
-``$ python setup.py requirements``
+``$ pip install --upgrade -r requirements.txt``
 
 Installing and creating a new project
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
