@@ -1,10 +1,7 @@
 # -*- coding: utf-8 -*-
-import ast
-import re
 import io
 from os.path import dirname
 from os.path import join
-from codecs import open
 
 from setuptools import find_packages, setup
 from bernardomg.tox_test_command import ToxTestCommand
@@ -20,9 +17,6 @@ __license__ = 'MIT'
 
 # Source package
 _source_package = '{{ cookiecutter.package_name }}/'
-
-# Regular expression for the version
-_version_re = re.compile(r'__version__\s+=\s+(.*)')
 
 # Test requirements
 _tests_require = ['tox']
