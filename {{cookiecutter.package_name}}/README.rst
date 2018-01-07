@@ -26,8 +26,6 @@ project according to a few pieces of data it will ask for.
 Features
 --------
 
-By default the project comes with the following features:
-
 - Travis configuration file
 - Customized setup.py module to minimize configuration, and using tox for the tests
 - Docs using `Sphinx`_ and the `Sphinx Docs Theme <https://github.com/Bernardo-MG/sphinx-docs-theme>`_
