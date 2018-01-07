@@ -5,8 +5,8 @@ Cookiecutter Python Library
 `Cookiecutter`_ template for creating general-purpose Python libraries.
 
 While it mostly follows my personal tastes, it offers a series of good 
-practices which include deployment files, makefile, testing, and the use of 
-various free services, such as Github, Travis and Pypi.
+practices which include deployment files, testing, and the use of  various
+free services, such as Github, Travis and Pypi.
 
 .. image:: https://img.shields.io/badge/docs-release-blue.svg
     :target: http://docs.bernardomg.com/cookiecutter-python-library
@@ -66,10 +66,10 @@ Of course, a Python interpreter is also required. To find the valid versions
 check the Cookiecutter page.
 
 All other dependencies are indicated on the requirements.txt file.
-These can be installed with the included makefile by using the following
-command:
 
-``$ make requirements``
+These can be installed with:
+
+``$ pip install --upgrade -r requirements.txt``
 
 Installing and creating a new project
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

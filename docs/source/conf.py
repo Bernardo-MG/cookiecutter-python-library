@@ -80,8 +80,6 @@ html_theme_options = {
                                         ('Usage', './usage.html'),
                                         ('Tests',
                                          './tests.html'),
-                                        ('Makefile',
-                                         './makefile.html'),
                                         ('Doc site',
                                          './doc_site.html')])],
 }

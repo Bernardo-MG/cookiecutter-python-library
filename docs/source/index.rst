@@ -26,7 +26,6 @@ Features
    acquire
    usage
    doc_site
-   makefile
    tests
 
 

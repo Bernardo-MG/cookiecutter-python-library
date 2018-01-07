@@ -16,17 +16,15 @@ project according to a few pieces of data it will ask for.
     :target: https://pypi.python.org/pypi/{{ cookiecutter.package_name }}
     :alt: {{ cookiecutter.project_name }} Pypi package page
 
-.. image:: https://readthedocs.org/projects/{{ cookiecutter.package_name }}/badge/?version=latest
+.. image:: https://img.shields.io/badge/docs-release-blue.svg
     :target: http://{{ cookiecutter.docs_release_url }}/{{ cookiecutter.package_name }}
     :alt: {{ cookiecutter.project_name }} latest documentation Status
-.. image:: https://readthedocs.org/projects/{{ cookiecutter.package_name }}/badge/?version=develop
+.. image:: https://img.shields.io/badge/docs-develop-blue.svg
     :target: http://{{ cookiecutter.docs_development_url }}/{{ cookiecutter.package_name }}
     :alt: {{ cookiecutter.project_name }} development documentation Status
 
 Features
 --------
-
-By default the project comes with the following features:
 
 - Travis configuration file
 - Customized setup.py module to minimize configuration, and using tox for the tests
@@ -63,9 +61,10 @@ The project has been tested in the following versions of the interpreter:
 - Pypy 3
 
 All other dependencies are indicated on the requirements.txt file.
-The included makefile can install them with the command:
 
-``$ make requirements``
+These can be installed with:
+
+``$ pip install --upgrade -r requirements.txt``
 
 Installing
 ~~~~~~~~~~
