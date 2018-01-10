@@ -31,7 +31,7 @@ For that the usual command can be used:
 
     $ tox -e env_name
 
-Where 'env_name' is the Python version code, such as 'py27' for Python 2.7.
+Where 'env_name' is the Python version code, such as 'py36' for Python 3.6.
 
 ~~~~~~~~
 Coverage
