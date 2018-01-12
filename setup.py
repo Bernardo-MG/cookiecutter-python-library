@@ -4,6 +4,7 @@ from os.path import dirname
 from os.path import join
 
 from setuptools import find_packages, setup
+from sphinx.setup_command import BuildDoc
 from tox_test_command import ToxTestCommand
 
 """
@@ -58,5 +59,8 @@ setup(
     ],
     tests_require=_tests_require,
     extras_require={'test': _tests_require},
-    cmdclass={'test': ToxTestCommand},
+    cmdclass={
+        'build_docs': BuildDoc,
+        'test': ToxTestCommand
+    },
 )
