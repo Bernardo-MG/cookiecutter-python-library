@@ -23,9 +23,9 @@ Projects created with this template come with the following features:
 - Travis configuration file
 - Customized setup.py module to minimize configuration, and using tox for the tests
 - Docs using `Sphinx`_ and the `Sphinx Docs Theme`_
+- Run tests or build the docs with a command
 - Prepared to run tests through tox
-- Prepared to run tests on Python 2 and 3
-- Prepared to run tests on pypy and pypy 3
+- Prepared to run tests on Python 3 and pypy 3
 - Prepared to run coverage tests and integrate with `Coveralls`_
 - Prepared to run tests for the `Sphinx`_ documentation
 
