@@ -23,24 +23,26 @@ jobs:
       id: extract_branch
     - name: Check-out
       uses: actions/checkout@v2
-    - name: Set up JDK
-      uses: actions/setup-java@v1
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
       with:
-        java-version: 11
-    - name: Set up Maven settings
-      uses: bernardo-mg/deployment-maven-settings-action@v1.1.2
-      with:
-        version-type: ${{ steps.extract_branch.outputs.branch }}
-      env:
-        DEPLOY_DOCS_USER: ${{ secrets.DEPLOY_DOCS_USER }}
-        DEPLOY_DOCS_PASSWORD: ${{ secrets.DEPLOY_DOCS_PASSWORD }}
-        DEPLOY_DOCS_DEVELOP_USER: ${{ secrets.DEPLOY_DOCS_DEVELOP_USER }}
-        DEPLOY_DOCS_DEVELOP_PASSWORD: ${{ secrets.DEPLOY_DOCS_DEVELOP_PASSWORD }}
-        DEPLOY_DOCS_SITE: ${{ secrets.DEPLOY_DOCS_SITE }}
-        DEPLOY_DOCS_DEVELOP_SITE: ${{ secrets.DEPLOY_DOCS_DEVELOP_SITE }}
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install flake8 pytest
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: Install sshpass
+      run: sudo apt-get install sshpass
+    - name: Tests docs
+      run: python setup.py test -p docs
+    - name: Build docs
+      run: python setup.py build_docs
+    - name: Move to docs folder
+      run: cd ./build/sphinx/html
     - name: Deploy development docs
       if: steps.extract_branch.outputs.branch == 'develop'
-      run: mvn site site:deploy -B -P deployment,deployment-development --settings settings.xml
+      run: sshpass -p "${{ secrets.DEPLOY_DOCS_DEVELOP_PASSWORD }}" scp -o 'StrictHostKeyChecking no' -P "${{ secrets.DEPLOY_DOCS_PORT }}" -r ./* "${{ secrets.DEPLOY_DOCS_DEVELOP_USER }}@${{ secrets.DEPLOY_DOCS_HOST }}:${{ secrets.DEPLOY_DOCS_DEVELOP_PATH }}";
     - name: Deploy release docs
       if: steps.extract_branch.outputs.branch == 'master'
-      run: mvn site site:deploy -B -P deployment,deployment-release --settings settings.xml
+      run: sshpass -p "${{ secrets.DEPLOY_DOCS_PASSWORD }}" scp -o 'StrictHostKeyChecking no' -P "${{ secrets.DEPLOY_DOCS_PORT }}" -r ./* "${{ secrets.DEPLOY_DOCS_USER }}@${{ secrets.DEPLOY_DOCS_HOST }}:${{ secrets.DEPLOY_DOCS_PATH }}";
