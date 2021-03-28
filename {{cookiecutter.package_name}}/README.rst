@@ -96,7 +96,7 @@ This will delegate the execution to tox.
 
 It is possible to run just one of the test profiles, in this case the py36 profile:
 
-``python setup.py test -p "py36"``
+``python setup.py test -p "py3.8"``
 
 Collaborate
 -----------
