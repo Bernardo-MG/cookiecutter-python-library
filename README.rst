@@ -48,7 +48,7 @@ The source files for the docs, a small `Sphinx`_ project, are kept in the 'docs 
 
 These can be built if needed:
 
-``$ python setup.py build_docs``
+``python setup.py build_docs``
 
 Usage
 -----
@@ -62,7 +62,7 @@ Prerequisites
 `Cookiecutter`_ is required to make use of this template. It can be acquired
 through pip:
 
-``$ pip install cookiecutter``
+``pip install cookiecutter``
 
 Of course, a Python interpreter is also required. To find the valid versions
 check the Cookiecutter page.
@@ -71,20 +71,20 @@ All other dependencies are indicated on the requirements.txt file.
 
 These can be installed with:
 
-``$ pip install --upgrade -r requirements.txt``
+``pip install --upgrade -r requirements.txt``
 
 Installing and creating a new project
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The template can be used from the command line with the following command:
 
-``$ cookiecutter gh:bernardo-mg/cookiecutter-python-library``
+``cookiecutter gh:bernardo-mg/cookiecutter-python-library``
 
 This will download the template and begin to create a new project. After this
 the template has been installed on the local computer, and can be reused with
 the following command:
 
-``$ cookiecutter cookiecutter-python-library/``
+``cookiecutter cookiecutter-python-library/``
 
 Collaborate
 -----------

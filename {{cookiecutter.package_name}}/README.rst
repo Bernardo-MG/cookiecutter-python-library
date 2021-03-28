@@ -48,7 +48,7 @@ The source files for the docs, a small `Sphinx`_ project, are kept in the 'docs 
 
 These can be built if needed:
 
-``$ python setup.py build_docs``
+``python setup.py build_docs``
 
 Prerequisites
 ~~~~~~~~~~~~~
@@ -65,7 +65,7 @@ All other dependencies are indicated on the requirements.txt file.
 
 These can be installed with:
 
-``$ pip install --upgrade -r requirements.txt``
+``pip install --upgrade -r requirements.txt``
 
 Installing
 ~~~~~~~~~~
@@ -73,11 +73,11 @@ Installing
 The project is offered as a `Pypi package`_, and using pip is the preferred way
 to install it. For this use the following command;
 
-``$ pip install {{ cookiecutter.package_name }}``
+``pip install {{ cookiecutter.package_name }}``
 
 If needed, manual installation is possible:
 
-``$ python setup.py install``
+``python setup.py install``
 
 Usage
 -----
@@ -90,13 +90,13 @@ Testing
 
 The tests included with the project can be run with:
 
-``$ python setup.py test``
+``python setup.py test``
 
 This will delegate the execution to tox.
 
 It is possible to run just one of the test profiles, in this case the py36 profile:
 
-``$ python setup.py test -p "py36"``
+``python setup.py test -p "py36"``
 
 Collaborate
 -----------
