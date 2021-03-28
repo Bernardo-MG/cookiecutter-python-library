@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
-import ast
-import re
 import io
 from os.path import dirname
 from os.path import join
-from codecs import open
 
 from setuptools import find_packages, setup
-from bernardomg.tox_test_command import ToxTestCommand
+
+from tox_test_command import ToxTestCommand
+from sphinx.setup_command import BuildDoc
+from version_extractor import extract_version_init
 
 """
 PyPI configuration module.
@@ -18,10 +18,7 @@ This is prepared for easing the generation of deployment files.
 __license__ = 'MIT'
 
 # Source package
-_source_package = '{{ cookiecutter.package_name }}/'
-
-# Regular expression for the version
-_version_re = re.compile(r'__version__\s+=\s+(.*)')
+_source_package = 'dice_notation/'
 
 # Test requirements
 _tests_require = ['tox']
@@ -35,21 +32,13 @@ def read(*names, **kwargs):
     ).read()
 
 
-# Gets the version for the source folder __init__.py file
-with open(_source_package + '__init__.py', 'rb',
-          encoding='utf-8') as f:
-    version_lib = f.read()
-    version_lib = _version_re.search(version_lib).group(1)
-    version_lib = str(ast.literal_eval(version_lib.rstrip()))
-
-
 setup(
     name='{{ cookiecutter.package_name }}',
     packages=find_packages(),
     include_package_data=True,
     package_data={
     },
-    version=version_lib,
+    version=extract_version_init(_source_package),
     description={{'{0!r}'.format(cookiecutter.project_short_description).lstrip('ub')}},
     author={{'{0!r}'.format(cookiecutter.developer_name).lstrip('ub')}},
     author_email={{'{0!r}'.format(cookiecutter.developer_email).lstrip('ub')}},
@@ -62,8 +51,6 @@ setup(
         'Development Status :: 3 - Alpha',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
@@ -75,5 +62,9 @@ setup(
     ],
     tests_require=_tests_require,
     extras_require={'test': _tests_require},
-    cmdclass={'test': ToxTestCommand},
+    cmdclass={
+        'build_docs': BuildDoc,
+        'test': ToxTestCommand
+    },
+    python_requires='>=3.6',
 )

@@ -23,9 +23,9 @@ Projects created with this template come with the following features:
 - Travis configuration file
 - Customized setup.py module to minimize configuration, and using tox for the tests
 - Docs using `Sphinx`_ and the `Sphinx Docs Theme`_
+- Run tests or build the docs with a command
 - Prepared to run tests through tox
-- Prepared to run tests on Python 2 and 3
-- Prepared to run tests on pypy and pypy 3
+- Prepared to run tests on Python 3 and pypy 3
 - Prepared to run coverage tests and integrate with `Coveralls`_
 - Prepared to run tests for the `Sphinx`_ documentation
 
@@ -44,9 +44,11 @@ documentation sites:
 - The `latest docs`_ are always generated for the latest release, kept in the 'master' branch
 - The `development docs`_ are generated from the latest code in the 'develop' branch
 
-You can also create the documentation from the source files, kept in the 'docs'
-folder, with the help of `Sphinx`_. For this use the makefile, or the make.bat
-file, contained on that folder.
+The source files for the docs, a small `Sphinx`_ project, are kept in the 'docs folder.
+
+These can be built if needed:
+
+``python setup.py build_docs``
 
 Usage
 -----
@@ -60,7 +62,7 @@ Prerequisites
 `Cookiecutter`_ is required to make use of this template. It can be acquired
 through pip:
 
-``$ pip install cookiecutter``
+``pip install cookiecutter``
 
 Of course, a Python interpreter is also required. To find the valid versions
 check the Cookiecutter page.
@@ -69,20 +71,20 @@ All other dependencies are indicated on the requirements.txt file.
 
 These can be installed with:
 
-``$ pip install --upgrade -r requirements.txt``
+``pip install --upgrade -r requirements.txt``
 
 Installing and creating a new project
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The template can be used from the command line with the following command:
 
-``$ cookiecutter gh:bernardo-mg/cookiecutter-python-library``
+``cookiecutter gh:bernardo-mg/cookiecutter-python-library``
 
 This will download the template and begin to create a new project. After this
 the template has been installed on the local computer, and can be reused with
 the following command:
 
-``$ cookiecutter cookiecutter-python-library/``
+``cookiecutter cookiecutter-python-library/``
 
 Collaborate
 -----------

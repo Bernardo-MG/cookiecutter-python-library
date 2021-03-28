@@ -4,7 +4,8 @@ from os.path import dirname
 from os.path import join
 
 from setuptools import find_packages, setup
-from bernardomg.tox_test_command import ToxTestCommand
+from sphinx.setup_command import BuildDoc
+from tox_test_command import ToxTestCommand
 
 """
 PyPI configuration module.
@@ -32,7 +33,7 @@ setup(
     include_package_data=True,
     package_data={
     },
-    version='0.1.6',
+    version='0.2.0',
     description='Cookiecutter template for Python libraries.',
     author='Bernardo Martínez Garrido',
     author_email='programming@bernardomg.com',
@@ -47,7 +48,6 @@ setup(
         'Intended Audience :: Developers',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
@@ -59,5 +59,8 @@ setup(
     ],
     tests_require=_tests_require,
     extras_require={'test': _tests_require},
-    cmdclass={'test': ToxTestCommand},
+    cmdclass={
+        'build_docs': BuildDoc,
+        'test': ToxTestCommand
+    },
 )
