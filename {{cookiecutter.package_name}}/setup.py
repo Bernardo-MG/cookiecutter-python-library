@@ -4,6 +4,7 @@ from os.path import dirname
 from os.path import join
 
 from setuptools import find_packages, setup
+
 from tox_test_command import ToxTestCommand
 from sphinx.setup_command import BuildDoc
 from version_extractor import extract_version_init
@@ -17,7 +18,7 @@ This is prepared for easing the generation of deployment files.
 __license__ = 'MIT'
 
 # Source package
-_source_package = '{{ cookiecutter.package_name }}/'
+_source_package = 'dice_notation/'
 
 # Test requirements
 _tests_require = ['tox']
@@ -65,4 +66,5 @@ setup(
         'build_docs': BuildDoc,
         'test': ToxTestCommand
     },
+    python_requires='>=3.6',
 )
