@@ -53,15 +53,7 @@ These can be built if needed:
 Prerequisites
 ~~~~~~~~~~~~~
 
-The project has been tested in the following versions of the interpreter:
-
-- Python 3.4
-- Python 3.5
-- Python 3.6
-- Pypy
-- Pypy 3
-
-All other dependencies are indicated on the requirements.txt file.
+Dependencies are indicated on the requirements.txt file.
 
 These can be installed with:
 
@@ -96,7 +88,7 @@ This will delegate the execution to tox.
 
 It is possible to run just one of the test profiles, in this case the py36 profile:
 
-``python setup.py test -p "py36"``
+``python setup.py test -p "py3.8"``
 
 Collaborate
 -----------
