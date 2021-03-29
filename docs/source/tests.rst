@@ -96,10 +96,6 @@ this the following tox command can be used:
 
     $ python setup.py test -p check
 
-By default Travis won't run this environment, as it is too prone to failures.
-It will check the readme, the manifest and all the code, making sure they
-conform style standards.
-
-.. _Coveralls: https://coveralls.io
-.. _tox: https://tox.readthedocs.io/en/latest/
-.. _Travis CI: travis-ci.org
+By default the CI configuration won't run this environment, as it is too
+prone to failures. It will check the readme, the manifest and all the code,
+making sure they conform style standards.
