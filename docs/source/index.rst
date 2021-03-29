@@ -11,7 +11,7 @@ and a bunch of configurations I've found useful.
 Features
 --------
 
-- Travis configuration file
+- Github Workflow configuration file
 - Customized setup.py module to minimize configuration, and using tox for the tests
 - Run tests with a command
 - Docs using `Sphinx`_ and the `Sphinx Docs Theme`_

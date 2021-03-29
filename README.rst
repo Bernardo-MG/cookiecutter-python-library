@@ -6,7 +6,7 @@ Cookiecutter Python Library
 
 While it mostly follows my personal tastes, it offers a series of good 
 practices which include deployment files, testing, and the use of  various
-free services, such as Github, Travis and Pypi.
+free services, such as Github and Pypi.
 
 .. image:: https://img.shields.io/badge/docs-release-blue.svg
     :target: http://docs.bernardomg.com/cookiecutter-python-library
@@ -20,7 +20,7 @@ Features
 
 Projects created with this template come with the following features:
 
-- Travis configuration file
+- Github Workflow configuration file
 - Customized setup.py module to minimize configuration, and using tox for the tests
 - Docs using `Sphinx`_ and the `Sphinx Docs Theme`_
 - Run tests or build the docs with a command
