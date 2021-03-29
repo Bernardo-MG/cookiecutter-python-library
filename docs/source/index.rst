@@ -11,7 +11,7 @@ and a bunch of configurations I've found useful.
 Features
 --------
 
-- Travis configuration file
+- Github Workflow configuration file
 - Customized setup.py module to minimize configuration, and using tox for the tests
 - Run tests with a command
 - Docs using `Sphinx`_ and the `Sphinx Docs Theme`_
@@ -19,7 +19,6 @@ Features
 - Prepared to run tests through tox
 - Prepared to run tests on Python 3
 - Prepared to run tests on pypy 3
-- Prepared to run coverage tests and integrate with `Coveralls`_
 - Prepared to run tests for the `Sphinx`_ documentation
 
 .. toctree::
@@ -32,6 +31,5 @@ Features
    tests
 
 
-.. _Coveralls: https://coveralls.io
 .. _Sphinx: http://sphinx-doc.org/
 .. _Sphinx Docs Theme: https://github.com/Bernardo-MG/sphinx-docs-theme

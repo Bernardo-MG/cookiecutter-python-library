@@ -105,8 +105,8 @@ html_theme_options = {
     'years': datetime.datetime.now().year,
     'scm_name': 'Github',
     'scm_url': 'https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.package_name }}',
-    'ci_name': 'Travis',
-    'ci_url': 'https://travis-ci.org/{{ cookiecutter.github_username }}/{{ cookiecutter.package_name }}',
+    'ci_name': 'Github',
+    'ci_url': 'https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.package_name }}/actions',
     'issues_name': 'Github',
     'issues_url': 'https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.package_name }}/issues',
     'releases_repos': [

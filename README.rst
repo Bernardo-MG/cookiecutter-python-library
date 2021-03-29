@@ -6,7 +6,7 @@ Cookiecutter Python Library
 
 While it mostly follows my personal tastes, it offers a series of good 
 practices which include deployment files, testing, and the use of  various
-free services, such as Github, Travis and Pypi.
+free services, such as Github and Pypi.
 
 .. image:: https://img.shields.io/badge/docs-release-blue.svg
     :target: http://docs.bernardomg.com/cookiecutter-python-library
@@ -20,13 +20,12 @@ Features
 
 Projects created with this template come with the following features:
 
-- Travis configuration file
+- Github Workflow configuration file
 - Customized setup.py module to minimize configuration, and using tox for the tests
 - Docs using `Sphinx`_ and the `Sphinx Docs Theme`_
 - Run tests or build the docs with a command
 - Prepared to run tests through tox
 - Prepared to run tests on Python 3
-- Prepared to run coverage tests and integrate with `Coveralls`_
 - Prepared to run tests for the `Sphinx`_ documentation
 
 Demo
@@ -112,7 +111,6 @@ License
 
 The project has been released under the `MIT License`_.
 
-.. _Coveralls: https://coveralls.io
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
 .. _GitHub project page: https://github.com/Bernardo-MG/cookiecutter-python-library
 .. _project issues tracker: https://github.com/Bernardo-MG/cookiecutter-python-library/issues
