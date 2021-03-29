@@ -9,4 +9,4 @@ cookiecutter==1.6.0
 # Documentation
 Sphinx==1.6.5
 sphinx-docs-theme==0.2.3
-Pygments==2.2.0
+Pygments==2.7.4
