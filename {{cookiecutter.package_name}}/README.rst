@@ -32,7 +32,6 @@ Features
 - Prepared to run tests through tox
 - Prepared to run tests on Python 2 and 3
 - Prepared to run tests on pypy and pypy 3
-- Prepared to run coverage tests and integrate with `Coveralls <https://coveralls.io>`_
 - Prepared to run tests for the `Sphinx`_ documentation
 
 Documentation

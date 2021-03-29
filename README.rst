@@ -26,7 +26,6 @@ Projects created with this template come with the following features:
 - Run tests or build the docs with a command
 - Prepared to run tests through tox
 - Prepared to run tests on Python 3
-- Prepared to run coverage tests and integrate with `Coveralls`_
 - Prepared to run tests for the `Sphinx`_ documentation
 
 Demo
@@ -112,7 +111,6 @@ License
 
 The project has been released under the `MIT License`_.
 
-.. _Coveralls: https://coveralls.io
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
 .. _GitHub project page: https://github.com/Bernardo-MG/cookiecutter-python-library
 .. _project issues tracker: https://github.com/Bernardo-MG/cookiecutter-python-library/issues

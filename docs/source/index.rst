@@ -19,7 +19,6 @@ Features
 - Prepared to run tests through tox
 - Prepared to run tests on Python 3
 - Prepared to run tests on pypy 3
-- Prepared to run coverage tests and integrate with `Coveralls`_
 - Prepared to run tests for the `Sphinx`_ documentation
 
 .. toctree::
@@ -32,6 +31,5 @@ Features
    tests
 
 
-.. _Coveralls: https://coveralls.io
 .. _Sphinx: http://sphinx-doc.org/
 .. _Sphinx Docs Theme: https://github.com/Bernardo-MG/sphinx-docs-theme
