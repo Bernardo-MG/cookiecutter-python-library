@@ -33,7 +33,7 @@ setup(
     include_package_data=True,
     package_data={
     },
-    version='0.3.0',
+    version='1.0.0',
     description='Cookiecutter template for Python libraries.',
     author='Bernardo Martínez Garrido',
     author_email='programming@bernardomg.com',
@@ -43,14 +43,16 @@ setup(
     keywords=['cookiecutter', 'template', 'python'],
     platforms='any',
     classifiers=[
-        'Development Status :: 4 - Beta',
+        'Development Status :: 5 - Production/Stable',
         'License :: OSI Approved :: MIT License',
         'Intended Audience :: Developers',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9'
         'Topic :: Software Development'
     ],
     long_description=read('README.rst'),
