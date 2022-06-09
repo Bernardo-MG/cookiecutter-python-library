@@ -4,7 +4,7 @@ twine==3.4.1
 bernardomg.tox-test-command==1.2.0
 
 # Cookiecutter
-cookiecutter==1.7.2
+cookiecutter==2.1.1
 
 # Documentation
 Sphinx==3.5.3
